@@ -1,0 +1,2194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Florida Business &amp; Technology University — FBTU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1E2370;--navy2:#131650;--navy3:#2A3299;
+  --navy-lt:#E8EAF6;--navy-xlt:#F0F2FD;
+  --red:#C8232C;--red2:#A01820;--red-lt:#FDECEA;
+  --w:#fff;--off:#F7F8FC;--g:#F5F5F5;
+  --t:#212121;--tm:#757575;--bd:#E0E0E0;
+  --H:'Montserrat',sans-serif;--B:'Open Sans',sans-serif;
+  --nh:72px;--r:6px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--B);color:var(--t);background:#fff;overflow-x:hidden}
+a,button{cursor:pointer;text-decoration:none;color:inherit;border:none;background:none;font-family:var(--B)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 60px}
+@media(max-width:1100px){.wrap{padding:0 32px}}
+@media(max-width:768px){.wrap{padding:0 18px}}
+.pg{display:none}.pg.on{display:block}
+.sec{padding:92px 0}
+@media(max-width:768px){.sec{padding:60px 0}}
+
+/* ── TYPOGRAPHY ─── */
+.lbl{display:inline-flex;align-items:center;gap:8px;font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.lbl::after{content:'';width:26px;height:2px;background:var(--red)}
+h2.ttl{font-family:var(--H);font-size:clamp(30px,3.8vw,50px);font-weight:900;line-height:1.05;color:var(--navy);margin-bottom:14px}
+h2.ttl em{color:var(--red);font-style:normal}
+h2.ttl.w{color:#fff}
+h2.ttl.w em{color:rgba(255,255,255,.4)}
+.sub{font-size:16px;font-weight:300;color:var(--tm);line-height:1.72;max-width:640px}
+.sub.w{color:rgba(255,255,255,.65)}
+
+/* ── BUTTONS ─── */
+.btn{display:inline-flex;align-items:center;gap:7px;font-family:var(--B);font-weight:700;border-radius:var(--r);transition:all .2s;letter-spacing:.02em}
+.lg{font-size:15px;padding:14px 30px}.md{font-size:13px;padding:10px 20px}.sm{font-size:12px;padding:8px 15px}
+.b-red{background:var(--red);color:#fff;box-shadow:0 4px 20px rgba(200,35,44,.3)}.b-red:hover{background:var(--red2);transform:translateY(-1px)}
+.b-navy{background:var(--navy);color:#fff}.b-navy:hover{background:var(--navy2);transform:translateY(-1px)}
+.b-out{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4)}.b-out:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.b-outn{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}.b-outn:hover{background:var(--navy);color:#fff}
+.b-wht{background:#fff;color:var(--red);box-shadow:0 4px 16px rgba(0,0,0,.15)}.b-wht:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.2)}
+
+/* ── NAVBAR ─── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:999;height:var(--nh);background:var(--navy);display:flex;align-items:center;gap:20px;padding:0 36px;transition:background .3s,box-shadow .3s}
+#nav.sc{background:rgba(19,22,80,.97);box-shadow:0 2px 32px rgba(0,0,0,.3)}
+.nl{display:flex;align-items:center;gap:11px;flex-shrink:0;cursor:pointer}
+.ns{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.28);background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:11px;font-weight:900;color:#fff;letter-spacing:.5px}
+.nn{font-family:var(--H);font-size:12.5px;font-weight:700;line-height:1.2}
+.nn .a{color:#fff}.nn .b{color:var(--red)}
+.nm{display:flex;align-items:center;gap:2px;flex:1;justify-content:center}
+.ni{position:relative}
+.nk{font-family:var(--B);font-size:13px;font-weight:500;color:rgba(255,255,255,.75);padding:6px 11px;border-radius:4px;transition:all .2s;white-space:nowrap;background:none;border:none;display:block}
+.nk:hover,.nk.on{color:#fff;background:rgba(255,255,255,.1)}
+.dd{position:absolute;top:calc(100%+8px);left:50%;transform:translateX(-50%);background:#fff;border-radius:var(--r);box-shadow:0 12px 44px rgba(0,0,0,.16);min-width:220px;padding:7px;display:none;z-index:10}
+.ni:hover .dd{display:block}
+.dd a{display:block;font-size:13px;color:var(--t);padding:9px 13px;border-radius:4px;transition:background .15s;white-space:nowrap}
+.dd a:hover{background:var(--navy-lt);color:var(--navy)}
+.dds{height:1px;background:var(--bd);margin:5px 3px}
+.nr{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.np{font-family:var(--B);font-size:13px;font-weight:500;color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.22);padding:7px 13px;border-radius:4px;transition:all .2s}.np:hover{color:#fff;border-color:rgba(255,255,255,.6)}
+.hb{display:none;flex-direction:column;gap:5px;padding:6px}.hb span{display:block;width:22px;height:2px;background:#fff;border-radius:2px}
+.mob{display:none;position:fixed;top:var(--nh);left:0;right:0;background:var(--navy2);z-index:998;padding:18px;flex-direction:column;gap:3px}
+.mob.on{display:flex}
+.mob a{color:#fff;font-size:15px;padding:11px 14px;border-radius:4px;font-weight:500}.mob a:hover{background:rgba(255,255,255,.1)}
+
+/* ── HERO ─── */
+.hero{min-height:100vh;background:linear-gradient(155deg,rgba(19,22,80,.95) 0%,rgba(30,35,112,.88) 55%,rgba(200,35,44,.18) 100%),url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80") center/cover no-repeat;display:flex;align-items:center;padding:var(--nh) 0 0;position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
+.hero-glow{position:absolute;right:-80px;top:50%;transform:translateY(-50%);width:540px;height:540px;border-radius:50%;background:radial-gradient(circle,rgba(200,35,44,.18) 0%,transparent 68%);pointer-events:none}
+.hero-c{position:relative;z-index:1;max-width:760px;padding:80px 0}
+.he-ey{display:inline-flex;align-items:center;gap:10px;font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:18px}
+.he-ey::before{content:'';width:22px;height:2px;background:var(--red)}
+.he-h1{font-family:var(--H);font-size:clamp(52px,7vw,92px);font-weight:900;line-height:.93;color:#fff;letter-spacing:-2px;margin-bottom:6px}
+.he-h1 em{color:var(--red);font-style:normal}
+.he-h1b{font-family:var(--H);font-size:clamp(22px,2.8vw,38px);font-weight:600;color:rgba(255,255,255,.58);letter-spacing:-.5px;margin-bottom:26px}
+.he-p{font-size:17px;font-weight:300;line-height:1.75;color:rgba(255,255,255,.73);max-width:520px;margin-bottom:34px}
+.he-p strong{color:#fff;font-weight:600}
+.he-btns{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:48px}
+.he-stats{display:flex;flex-wrap:wrap;padding-top:34px;border-top:1px solid rgba(255,255,255,.11)}
+.hs{padding-right:36px;margin-right:36px;border-right:1px solid rgba(255,255,255,.11)}
+.hs:last-child{border-right:none;margin:0;padding:0}
+.hs-n{font-family:var(--H);font-size:46px;font-weight:900;line-height:1;color:#fff}
+.hs-n span{color:var(--red)}
+.hs-l{font-size:11.5px;color:rgba(255,255,255,.48);margin-top:4px;max-width:96px;line-height:1.4}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.3);font-size:10px;letter-spacing:.12em;text-transform:uppercase;animation:bob 2s ease-in-out infinite}
+.scroll-cue::before{content:'';width:1px;height:34px;background:linear-gradient(to bottom,rgba(255,255,255,.3),transparent)}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+
+/* ── TRUST BAR ─── */
+.tb{background:var(--navy2);border-bottom:3px solid var(--red)}
+.tb-in{display:flex;overflow-x:auto}
+.ti{display:flex;align-items:center;gap:9px;padding:17px 30px;white-space:nowrap;flex-shrink:0;border-right:1px solid rgba(255,255,255,.07)}
+.ti:last-child{border:none}
+.ti-t{font-size:13px;font-weight:500;color:rgba(255,255,255,.72)}.ti-t strong{color:#fff}
+
+/* ── PROGRAMS GRID ─── */
+.ph{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;flex-wrap:wrap;gap:18px}
+.ptabs{display:flex;background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+.ptab{font-family:var(--B);font-size:13px;font-weight:600;padding:9px 17px;color:var(--tm);transition:all .2s;background:none;border:none}
+.ptab.on{background:var(--navy);color:#fff}
+.ptab:hover:not(.on){background:var(--g)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.pc{background:#fff;border-radius:var(--r);border:1px solid var(--bd);padding:26px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s;cursor:pointer}
+.pc:hover{transform:translateY(-4px);box-shadow:0 14px 44px rgba(30,35,112,.1);border-color:rgba(30,35,112,.17)}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--navy)}
+.pc.po::before{background:var(--red)}
+.pc-lv{font-family:var(--H);font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--navy);margin-bottom:5px}
+.pc.po .pc-lv{color:var(--red)}
+.pc-sc{font-size:11px;color:var(--tm);margin-bottom:5px}
+.pc-nm{font-family:var(--H);font-size:19px;font-weight:800;color:var(--t);line-height:1.15;margin-bottom:11px}
+.pc-sp{display:flex;gap:7px;margin-bottom:12px;flex-wrap:wrap}
+.pc-s{font-size:11px;color:var(--tm);background:var(--g);padding:3px 7px;border-radius:3px}
+.pc-es{display:flex;flex-direction:column;gap:4px;margin-bottom:18px}
+.pc-e{font-size:12px;color:var(--tm);display:flex;gap:5px}
+.pc-e::before{content:'—';color:var(--navy);flex-shrink:0;font-size:10px;margin-top:2px}
+.pc.po .pc-e::before{color:var(--red)}
+.pc-a{font-family:var(--H);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--navy);display:inline-flex;align-items:center;gap:4px;border-bottom:1.5px solid rgba(30,35,112,.22);padding-bottom:2px;transition:border-color .2s}
+.pc.po .pc-a{color:var(--red);border-bottom-color:rgba(200,35,44,.22)}
+.pc:hover .pc-a{border-bottom-color:currentColor}
+
+/* ── WHY ─── */
+.why{background:var(--navy);position:relative;overflow:hidden}
+.why::before{content:'';position:absolute;right:-120px;top:-120px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(200,35,44,.16) 0%,transparent 70%);pointer-events:none}
+.why-sr{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.07);margin:48px 0;border-radius:var(--r);overflow:hidden}
+.wst{background:var(--navy);padding:26px 18px;text-align:center}
+.wst-n{font-family:var(--H);font-size:46px;font-weight:900;color:#fff;line-height:1}
+.wst-n.r{color:var(--red)}
+.wst-l{font-size:11px;color:rgba(255,255,255,.48);margin-top:5px;line-height:1.5}
+.why-g{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.07)}
+.wi{background:var(--navy);padding:38px 30px;transition:background .2s}
+.wi:hover{background:rgba(255,255,255,.05)}
+.wi-n{font-family:var(--H);font-size:54px;font-weight:900;color:rgba(255,255,255,.1);line-height:1;margin-bottom:9px;transition:color .25s}
+.wi:hover .wi-n{color:var(--red)}
+.wi-t{font-family:var(--H);font-size:17px;font-weight:800;text-transform:uppercase;color:#fff;margin-bottom:9px;letter-spacing:.02em}
+.wi-d{font-size:14px;font-weight:300;color:rgba(255,255,255,.58);line-height:1.7}
+.why-tl{text-align:center;margin-top:52px;font-family:var(--H);font-size:clamp(22px,3vw,42px);font-weight:900;text-transform:uppercase;letter-spacing:4px;color:rgba(255,255,255,.09)}
+.why-tl span{color:#fff}
+
+/* ── METHOD ─── */
+.ml{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center;margin-top:52px}
+.mit{display:flex;flex-direction:column}
+.mi{display:flex;gap:22px;padding:26px 0;border-bottom:1px solid var(--bd)}
+.mi:first-child{border-top:1px solid var(--bd)}
+.mi:hover .mi-n{color:var(--red)}
+.mi-n{font-family:var(--H);font-size:42px;font-weight:900;color:rgba(30,35,112,.09);flex-shrink:0;width:52px;line-height:1;padding-top:2px;transition:color .25s}
+.mi-t{font-family:var(--H);font-size:18px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:5px}
+.mi-d{font-size:14px;color:var(--tm);line-height:1.65}
+.mpanel{background:var(--navy);border-radius:var(--r);padding:42px;position:relative;overflow:hidden}
+.mpanel::after{content:'CANVAS';position:absolute;bottom:-16px;right:-6px;font-family:var(--H);font-size:86px;font-weight:900;color:rgba(255,255,255,.04);letter-spacing:-3px;pointer-events:none}
+.cvrow{display:flex;align-items:center;gap:13px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:16px 18px;margin-bottom:12px}
+.cvdot{width:40px;height:40px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:15px;font-weight:900;color:#fff;flex-shrink:0}
+.cv-m{font-family:var(--H);font-size:16px;font-weight:800;color:#fff;text-transform:uppercase}
+.cv-s{font-size:12px;color:rgba(255,255,255,.48);margin-top:2px}
+.unig{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:18px}
+.unib{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07);border-radius:4px;padding:11px;text-align:center;font-family:var(--H);font-size:14px;font-weight:700;color:rgba(255,255,255,.62);text-transform:uppercase;letter-spacing:1px}
+.aqb{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.09)}
+.aq-l{font-family:var(--H);font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.32);margin-bottom:8px}
+.aq-c{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:4px;padding:13px 15px}
+.aq-n{font-family:var(--H);font-size:15px;font-weight:800;color:#fff;text-transform:uppercase}
+.aq-d{font-size:12px;color:rgba(255,255,255,.42);margin-top:3px}
+
+/* ── CERTS ─── */
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.cc{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:30px 22px;text-align:center;transition:transform .2s,box-shadow .2s}
+.cc:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(30,35,112,.08)}
+.ci{width:54px;height:54px;border-radius:50%;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:13px;font-weight:900;letter-spacing:.5px}
+.ci.g{background:#4285F4;color:#fff}.ci.li{background:#0A66C2;color:#fff}.ci.m{background:#0866FF;color:#fff}.ci.ms{background:#00A4EF;color:#fff}
+.cc-n{font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--t);margin-bottom:7px}
+.cc-d{font-size:13px;color:var(--tm);line-height:1.6}
+
+/* ── PRICING ─── */
+.prl{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.prc{border-radius:var(--r);padding:40px 36px;border:1px solid var(--bd)}
+.prc.f{background:var(--navy);border-color:var(--navy)}.prc.s{background:var(--off)}
+.prl-v{font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--tm);margin-bottom:22px}
+.prc.f .prl-v{color:rgba(255,255,255,.48)}
+.pr-a{font-family:var(--H);font-size:72px;font-weight:900;line-height:1;color:var(--navy);margin-bottom:3px}
+.prc.f .pr-a{color:#fff}
+.pr-u{font-size:14px;color:var(--tm);margin-bottom:24px}
+.prc.f .pr-u{color:rgba(255,255,255,.52)}
+.pr-t{font-family:var(--H);font-size:24px;font-weight:900;text-transform:uppercase;color:var(--red);margin-bottom:3px}
+.pr-n{font-size:13px;color:var(--tm);margin-bottom:26px;line-height:1.5}
+.prc.f .pr-n{color:rgba(255,255,255,.48)}
+.pr-fs{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.pr-f{display:flex;align-items:flex-start;gap:8px;font-size:14px;color:var(--t)}
+.prc.f .pr-f{color:rgba(255,255,255,.78)}
+.pr-f::before{content:'✓';color:var(--red);font-weight:700;flex-shrink:0;margin-top:1px}
+.pr-ex{margin-top:28px;background:var(--g);border-radius:var(--r);padding:22px 26px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pe-t{font-family:var(--H);font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--tm);margin-bottom:3px}
+.pe-v{font-family:var(--H);font-size:21px;font-weight:900;color:var(--navy)}
+.pe-n{font-size:12px;color:var(--tm);margin-top:2px}
+
+/* ── ADMISSION ─── */
+.al{display:grid;grid-template-columns:1.1fr 1fr;gap:68px;align-items:start;margin-top:48px}
+.stps{display:flex;flex-direction:column}
+.stp{display:flex;gap:22px;padding:22px 0;border-bottom:1px solid var(--bd)}
+.stp:last-child{border:none}
+.stl{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+.std{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:17px;font-weight:900;color:#fff;background:var(--navy);flex-shrink:0;z-index:1}
+.std.r{background:var(--red)}.std.g{background:#0f6e56}
+.stln{width:1px;flex:1;min-height:14px;background:var(--bd);margin-top:4px}
+.st-t{font-family:var(--H);font-size:17px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:5px}
+.st-d{font-size:14px;color:var(--tm);line-height:1.6}
+.apanel{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:32px;position:sticky;top:calc(var(--nh)+14px)}
+.ap-t{font-family:var(--H);font-size:18px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:20px}
+.rqtabs{display:flex;background:var(--g);border-radius:4px;overflow:hidden;margin-bottom:20px}
+.rqtab{flex:1;font-family:var(--H);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--tm);padding:9px;text-align:center;transition:all .2s;border:none;background:none}
+.rqtab.on{background:var(--navy);color:#fff}
+.rql{display:flex;flex-direction:column;gap:9px}
+.rqi{display:flex;gap:9px;font-size:14px;color:var(--t);align-items:flex-start}
+.rqb{width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:6px}
+
+/* ── TESTIMONIALS ─── */
+.tg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.tc{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:30px;position:relative}
+.tc::before{content:'\201C';position:absolute;top:14px;right:18px;font-family:var(--H);font-size:76px;font-weight:900;color:var(--navy-lt);line-height:1}
+.tc-tx{font-size:15px;font-style:italic;color:var(--t);line-height:1.7;margin-bottom:18px}
+.tc-au{display:flex;align-items:center;gap:11px}
+.tc-av{width:38px;height:38px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:13px;font-weight:700;color:#fff;flex-shrink:0}
+.tc-n{font-family:var(--H);font-size:14px;font-weight:700;color:var(--t)}
+.tc-p{font-size:12px;color:var(--tm)}
+
+/* ── MIAMI ─── */
+.miami{min-height:460px;background:linear-gradient(to right,rgba(19,22,80,.97) 38%,rgba(19,22,80,.62) 100%),url("https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=1920&q=80") center/cover no-repeat;display:flex;align-items:center}
+.mia-c{padding:76px 60px;max-width:700px}
+@media(max-width:768px){.mia-c{padding:52px 18px}}
+.mia-h{font-family:var(--H);font-size:clamp(46px,6vw,76px);font-weight:900;text-transform:uppercase;line-height:.93;color:#fff;margin-bottom:18px}
+.mia-h span{color:var(--red)}
+.mia-d{font-size:16px;font-weight:300;color:rgba(255,255,255,.68);line-height:1.75;max-width:460px;margin-bottom:26px}
+.mia-a{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);padding:11px 17px;border-radius:var(--r);font-size:13px;color:rgba(255,255,255,.62)}
+.mia-a strong{color:#fff}
+
+/* ── CTA FINAL ─── */
+.ctaf{background:var(--red);padding:76px 60px;display:flex;justify-content:space-between;align-items:center;gap:36px;flex-wrap:wrap;position:relative;overflow:hidden}
+@media(max-width:768px){.ctaf{padding:52px 18px;flex-direction:column;align-items:flex-start}}
+.ctaf::before{content:'FBTU';position:absolute;right:-26px;top:50%;transform:translateY(-50%);font-family:var(--H);font-size:190px;font-weight:900;color:rgba(255,255,255,.05);letter-spacing:-8px;pointer-events:none}
+.cf-h{font-family:var(--H);font-size:clamp(30px,3.8vw,56px);font-weight:900;text-transform:uppercase;line-height:.95;color:#fff;margin-bottom:11px}
+.cf-s{font-size:16px;font-weight:300;color:rgba(255,255,255,.73)}
+.cf-ac{display:flex;flex-direction:column;gap:9px;flex-shrink:0}
+.cf-ph{font-size:12px;color:rgba(255,255,255,.48);text-align:center;margin-top:1px}
+
+/* ── PAGE HERO ─── */
+.phero{background:var(--navy);padding:calc(var(--nh)+52px) 0 60px;position:relative;overflow:hidden}
+.phero::before{content:'';position:absolute;right:-80px;top:-80px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(200,35,44,.16) 0%,transparent 70%);pointer-events:none}
+.ph-ey{font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:rgba(255,255,255,.42);margin-bottom:13px;display:flex;align-items:center;gap:9px}
+.ph-ey::before{content:'';width:22px;height:2px;background:var(--red)}
+.phero h1{font-family:var(--H);font-size:clamp(34px,4.8vw,60px);font-weight:900;color:#fff;line-height:1;margin-bottom:13px}
+.phero h1 em{color:var(--red);font-style:normal}
+.phero p{font-size:16px;font-weight:300;color:rgba(255,255,255,.62);line-height:1.72;max-width:600px}
+
+/* ── SOBRE ─── */
+.abg{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:48px}
+.mbox{background:var(--navy);border-radius:var(--r);padding:38px;margin-bottom:24px}
+.mbox h3{font-family:var(--H);font-size:20px;font-weight:800;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.mbox p{font-size:15px;font-weight:300;line-height:1.75;color:rgba(255,255,255,.78)}
+.prg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:48px}
+.prc2{background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px}
+.pn{font-family:var(--H);font-size:34px;font-weight:900;color:var(--navy-lt);line-height:1;margin-bottom:7px}
+.pt{font-family:var(--H);font-size:14px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:7px}
+.pd{font-size:13px;color:var(--tm);line-height:1.6}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;margin-top:26px}
+.tcard{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:22px;text-align:center}
+.tav{width:56px;height:56px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-family:var(--H);font-size:18px;font-weight:900;color:#fff}
+.trl{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--red);margin-bottom:5px}
+.tnm{font-family:var(--H);font-size:15px;font-weight:700;color:var(--t)}
+.lbox{background:var(--red-lt);border:1.5px solid rgba(200,35,44,.28);border-radius:var(--r);padding:30px;margin-top:26px}
+.lbox h3{font-family:var(--H);font-size:17px;font-weight:800;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.lr{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid rgba(200,35,44,.13);font-size:14px}
+.lr:last-child{border:none}
+.ll{font-weight:700;color:var(--t);min-width:170px;flex-shrink:0}
+.lv{color:var(--tm);line-height:1.5}
+
+/* ── PROGRAM PAGES ─── */
+.ppg{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px;margin-top:48px}
+.ppcard{background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;transition:transform .25s,box-shadow .25s}
+.ppcard:hover{transform:translateY(-4px);box-shadow:0 14px 42px rgba(30,35,112,.1)}
+.pptop{background:var(--navy);padding:22px 26px}
+.ppcard.po .pptop{background:var(--red)}
+.ppbg{font-family:var(--H);font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.48);margin-bottom:7px}
+.ppti{font-family:var(--H);font-size:20px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:7px}
+.ppcc{font-size:13px;color:rgba(255,255,255,.62)}
+.ppbd{padding:22px 26px}
+.ppds{font-size:14px;color:var(--tm);line-height:1.65;margin-bottom:18px}
+.ppet{font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--tm);margin-bottom:9px}
+.ppe{display:flex;flex-direction:column;gap:5px;margin-bottom:18px}
+.ppe-i{font-size:13px;color:var(--t);padding:6px 11px;background:var(--g);border-radius:4px;border-left:3px solid var(--navy)}
+.ppcard.po .ppe-i{border-left-color:var(--red)}
+.acc{border:1px solid var(--bd);border-radius:var(--r);margin-top:24px;overflow:hidden}
+.ac-i{border-bottom:1px solid var(--bd)}.ac-i:last-child{border:none}
+.ac-h{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;cursor:pointer;background:#fff;transition:background .15s;font-family:var(--H);font-size:13px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:.04em}
+.ac-h:hover{background:var(--navy-xlt)}
+.ac-a{transition:transform .25s;font-size:11px;color:var(--tm)}
+.ac-a.op{transform:rotate(180deg)}
+.ac-b{display:none;padding:14px 18px;background:var(--off);border-top:1px solid var(--bd)}
+.ac-b.op{display:block}
+.cl{display:flex;flex-direction:column;gap:5px}
+.ci2{display:flex;gap:11px;font-size:13px}
+.cc2{font-family:var(--H);font-weight:700;color:var(--navy);min-width:66px;flex-shrink:0}
+
+/* ── ADMISSION PAGE ─── */
+.ftable{width:100%;border-collapse:collapse;margin-top:24px;border-radius:var(--r);overflow:hidden}
+.ftable th{background:var(--navy);color:#fff;font-family:var(--H);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:11px 15px;text-align:left}
+.ftable td{padding:10px 15px;font-size:14px;border-bottom:1px solid var(--bd)}
+.ftable tr:nth-child(even) td{background:var(--off)}
+.ftable tr:last-child td{border:none}
+.ftable td:first-child{font-weight:600;color:var(--t)}
+.ftable td:last-child{color:var(--tm)}
+.fhl td{background:var(--navy-lt)!important;font-weight:700}
+.lnot{background:var(--red-lt);border:1.5px solid rgba(200,35,44,.28);border-radius:var(--r);padding:18px 22px;margin-bottom:22px;display:flex;gap:11px;align-items:flex-start}
+.lnot-t{font-size:14px;color:var(--t);line-height:1.6}
+.lnot-t strong{color:var(--red)}
+.sapg{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:26px}
+.sapc{background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:20px}
+.sap-v{font-family:var(--H);font-size:34px;font-weight:900;color:var(--navy);line-height:1}
+.sap-l{font-size:13px;color:var(--tm);margin-top:5px;line-height:1.5}
+
+/* ── VIDA ─── */
+.vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px;margin-top:26px}
+.vc{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:26px;transition:transform .2s,box-shadow .2s}
+.vc:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(30,35,112,.07)}
+.vic{width:46px;height:46px;border-radius:var(--r);background:var(--navy-lt);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px}
+.vt{font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:7px}
+.vd{font-size:14px;color:var(--tm);line-height:1.65}
+.hons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.hon{background:var(--navy);border-radius:var(--r);padding:22px;text-align:center}
+.hon-t{font-family:var(--H);font-size:15px;font-weight:900;text-transform:uppercase;color:var(--red);margin-bottom:7px}
+.hon-g{font-family:var(--H);font-size:26px;font-weight:900;color:#fff}
+.hon-r{font-size:12px;color:rgba(255,255,255,.46);margin-top:3px}
+.polls{display:flex;flex-direction:column;gap:11px;margin-top:26px}
+.poll{display:flex;gap:14px;padding:16px 18px;background:#fff;border:1px solid var(--bd);border-radius:var(--r)}
+.poli{font-size:19px;flex-shrink:0}
+.pol-t{font-family:var(--H);font-size:13px;font-weight:700;text-transform:uppercase;color:var(--navy);margin-bottom:3px}
+.pol-d{font-size:13px;color:var(--tm);line-height:1.55}
+.pol-b{display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;border-radius:3px;background:rgba(200,35,44,.1);color:var(--red);margin-top:3px;text-transform:uppercase;letter-spacing:.07em}
+
+/* ── CONTACT ─── */
+.cl2{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:48px}
+.cfl{font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--tm);margin-bottom:5px;display:block}
+.cfi{width:100%;border:1.5px solid var(--bd);border-radius:var(--r);padding:11px 13px;font-family:var(--B);font-size:14px;color:var(--t);transition:border-color .2s;background:#fff}
+.cfi:focus{outline:none;border-color:var(--navy)}
+.cfta{min-height:110px;resize:vertical}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fg{margin-bottom:16px}
+.cib{display:flex;gap:13px;padding:18px;background:var(--off);border:1px solid var(--bd);border-radius:var(--r);margin-bottom:14px}
+.ci-ic{font-size:19px;flex-shrink:0;margin-top:2px}
+.ci-l{font-family:var(--H);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--tm);margin-bottom:3px}
+.ci-v{font-size:14px;color:var(--t);font-weight:500;line-height:1.4}
+.ci-n{font-size:12px;color:var(--tm);margin-top:2px}
+.maph{background:var(--g);border-radius:var(--r);height:190px;display:flex;align-items:center;justify-content:center;margin-top:18px;border:1px solid var(--bd);color:var(--tm);font-size:14px;text-align:center;flex-direction:column;gap:7px}
+
+/* ── LEGAL PAGE ─── */
+.lpc{max-width:800px}
+.lpc h3{font-family:var(--H);font-size:19px;font-weight:800;text-transform:uppercase;color:var(--navy);margin:30px 0 11px}
+.lpc p{font-size:15px;color:var(--t);line-height:1.75;margin-bottom:13px}
+.lpc ul{padding-left:18px;margin-bottom:13px}
+.lpc li{font-size:15px;color:var(--t);line-height:1.75;margin-bottom:5px}
+.lwarn{background:var(--red-lt);border:1.5px solid rgba(200,35,44,.28);border-radius:var(--r);padding:22px 26px;margin-bottom:26px}
+.lwarn strong{color:var(--red);font-size:15px;display:block;margin-bottom:7px}
+.lwarn p{font-size:14px;color:var(--t);line-height:1.7;margin:0}
+
+/* ── FOOTER ─── */
+footer{background:var(--navy2);padding:56px 60px 0}
+@media(max-width:768px){footer{padding:38px 18px 0}}
+.ft{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:44px;padding-bottom:44px}
+.fsr{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+.fse{width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:11px;font-weight:900;color:#fff}
+.fbn{font-family:var(--H);font-size:12.5px;font-weight:700;color:#fff;line-height:1.25}
+.fbn span{color:var(--red)}
+.ftg{font-size:13px;color:rgba(255,255,255,.36);line-height:1.65;margin-bottom:16px}
+.fct{display:flex;flex-direction:column;gap:4px}
+.fct span{font-size:13px;color:rgba(255,255,255,.48)}
+.fct strong{color:rgba(255,255,255,.72)}
+.fct2{font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#fff;margin-bottom:16px}
+.fls{display:flex;flex-direction:column;gap:7px}
+.fls a{font-size:13px;color:rgba(255,255,255,.42);transition:color .15s}
+.fls a:hover{color:#fff}
+.fdiv{height:1px;background:rgba(255,255,255,.07);margin:0 60px}
+@media(max-width:768px){.fdiv{margin:0}}
+.fleg{padding:20px 60px 26px;font-size:11px;color:rgba(255,255,255,.26);line-height:1.75}
+@media(max-width:768px){.fleg{padding:20px 0 26px}}
+.fleg strong{color:rgba(255,255,255,.48)}
+.fbot{display:flex;justify-content:space-between;align-items:center;padding:16px 60px 26px;border-top:1px solid rgba(255,255,255,.06);flex-wrap:wrap;gap:11px}
+@media(max-width:768px){.fbot{padding:16px 0 26px}}
+.fcp{font-size:12px;color:rgba(255,255,255,.26)}
+.fsoc{display:flex;gap:7px}
+.sb{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.09);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:rgba(255,255,255,.5);transition:all .2s;cursor:pointer}
+.sb:hover{background:var(--red);border-color:var(--red);color:#fff}
+
+/* ── WHATSAPP ─── */
+.wab{position:fixed;bottom:26px;right:26px;z-index:998;width:54px;height:54px;border-radius:50%;background:#25D366;box-shadow:0 4px 18px rgba(37,211,102,.5);display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.wab:hover{transform:scale(1.1);box-shadow:0 6px 26px rgba(37,211,102,.65)}
+
+/* ── NEW PAGES CSS ─── */
+.acad-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:28px}
+.acad-card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:28px;transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.acad-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(30,35,112,.08)}
+.acad-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--navy)}
+.acad-icon{width:50px;height:50px;border-radius:var(--r);background:var(--navy-lt);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+.acad-ttl{font-family:var(--H);font-size:16px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
+.acad-desc{font-size:14px;color:var(--tm);line-height:1.65}
+.micro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-top:28px}
+.micro-card{background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:24px}
+.micro-badge{display:inline-flex;align-items:center;gap:6px;font-family:var(--H);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--red);color:#fff;padding:3px 10px;border-radius:3px;margin-bottom:12px}
+.micro-name{font-family:var(--H);font-size:17px;font-weight:800;color:var(--navy);margin-bottom:8px}
+.micro-desc{font-size:13px;color:var(--tm);line-height:1.6;margin-bottom:14px}
+.micro-provider{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--tm)}
+.micro-dot{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:9px;font-weight:900;color:#fff;flex-shrink:0}
+.jobs-hero-box{background:linear-gradient(135deg,#0d1545 0%,var(--navy) 100%);border-radius:var(--r);padding:48px;margin-bottom:48px;position:relative;overflow:hidden}
+.jobs-hero-box::after{content:"JOBS";position:absolute;right:-10px;bottom:-20px;font-family:var(--H);font-size:130px;font-weight:900;color:rgba(255,255,255,.04);letter-spacing:-4px;pointer-events:none}
+.jobs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px;margin-top:28px}
+.job-card{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:26px;transition:transform .2s,box-shadow .2s}
+.job-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(30,35,112,.08)}
+.job-icon{width:46px;height:46px;border-radius:var(--r);background:var(--navy-lt);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px}
+.job-ttl{font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:7px}
+.job-desc{font-size:14px;color:var(--tm);line-height:1.65}
+.intl-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+.intl-card{background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:28px}
+.apply-steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px;margin-top:32px}
+.apply-step{background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:28px;text-align:center}
+.apply-snum{width:48px;height:48px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--H);font-size:20px;font-weight:900;color:#fff;margin:0 auto 14px}
+.apply-snum.r{background:var(--red)}.apply-snum.g{background:#0f6e56}
+.apply-ttl{font-family:var(--H);font-size:14px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:7px}
+.apply-desc{font-size:13px;color:var(--tm);line-height:1.6}
+.req-form{background:var(--navy);border-radius:var(--r);padding:48px;max-width:680px;margin:0 auto}
+.rf-ttl{font-family:var(--H);font-size:28px;font-weight:900;text-transform:uppercase;color:#fff;margin-bottom:8px}
+.rf-sub{font-size:15px;color:rgba(255,255,255,.6);margin-bottom:32px;line-height:1.6}
+.rf-label{font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:5px;display:block}
+.rf-input{width:100%;border:1.5px solid rgba(255,255,255,.18);border-radius:var(--r);padding:12px 14px;font-family:var(--B);font-size:14px;color:#fff;background:rgba(255,255,255,.08);transition:border-color .2s;margin-bottom:16px}
+.rf-input:focus{outline:none;border-color:rgba(255,255,255,.55)}
+.rf-input::placeholder{color:rgba(255,255,255,.32)}
+.rf-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.dl-btn{display:inline-flex;align-items:center;gap:7px;font-family:var(--B);font-size:12px;font-weight:700;color:var(--navy);background:var(--navy-lt);border:1px solid var(--navy-lt);padding:7px 14px;border-radius:var(--r);transition:all .2s;cursor:pointer}
+.dl-btn:hover{background:var(--navy);color:#fff}
+.dl-btn.w{color:#fff;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2)}
+.dl-btn.w:hover{background:rgba(255,255,255,.22)}
+@media(max-width:768px){.intl-grid,.rf-row{grid-template-columns:1fr}.apply-steps{grid-template-columns:1fr 1fr}}
+/* ── FADE ANIMATION ─── */
+.fd{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.fd.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* ── RESPONSIVE ─── */
+@media(max-width:1100px){
+  .ml,.abg,.cl2,.al{grid-template-columns:1fr;gap:38px}
+  .cg,.tg{grid-template-columns:1fr 1fr}
+  .why-g,.why-sr{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr 1fr;gap:30px}
+  footer,.fdiv,.fleg,.fbot{padding-left:32px;padding-right:32px}
+  .prl{grid-template-columns:1fr}
+  .pr-ex{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  :root{--nh:60px}
+  #nav{padding:0 15px}
+  .nm,.nr{display:none}
+  .hb{display:flex;margin-left:auto}
+  .he-c{padding:56px 0}
+  .he-stats{gap:18px}
+  .hs{padding:0;margin:0;border:none}
+  .why-g,.why-sr,.prg,.cg,.tg,.hons,.sapg{grid-template-columns:1fr}
+  .pgrid,.ppg,.vg,.tgrid{grid-template-columns:1fr}
+  .fr{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr;gap:22px}
+  footer,.fdiv,.fleg,.fbot{padding-left:0;padding-right:0}
+  .pr-ex{grid-template-columns:1fr}
+  .apanel{position:static}
+}
+</style>
+</head>
+<body>
+
+<!-- ════ NAVBAR ════ -->
+<nav id="nav">
+  <div class="nl" onclick="go('home')">
+    <div class="ns">FBTU</div>
+    <div class="nn"><div class="a">Florida Business &amp; Technology</div><div class="b">University</div></div>
+  </div>
+  <div class="nm">
+    <div class="ni"><button class="nk" onclick="go('home')">Inicio</button></div>
+    <div class="ni">
+      <button class="nk">Sobre FBTU ▾</button>
+      <div class="dd">
+        <a onclick="go('sobre')">¿Quiénes somos?</a>
+        <a onclick="go('sobre','mision')">Misión y Visión</a>
+        <a onclick="go('sobre','equipo')">Equipo Directivo</a>
+        <div class="dds"></div>
+        <a onclick="go('sobre','licenc')" style="color:var(--red);font-weight:600">⚖ Licensing &amp; Info Institucional</a>
+        <a onclick="go('sobre','catalogo')">Catálogo Oficial (PDF)</a>
+      </div>
+    </div>
+    <div class="ni">
+      <button class="nk">Pregrado ▾</button>
+      <div class="dd">
+        <a onclick="go('pre')">Vista general</a>
+        <div class="dds"></div>
+        <a onclick="go('pre','bba')">B.S. Business Administration</a>
+        <a onclick="go('pre','mkt')">B.S. Marketing</a>
+        <a onclick="go('pre','it')">B.S. Information Technology</a>
+        <a onclick="go('pre','acct')">B.S. Accounting &amp; Finance</a>
+      </div>
+    </div>
+    <div class="ni">
+      <button class="nk">Posgrado / MBA ▾</button>
+      <div class="dd">
+        <a onclick="go('pos')">Vista general</a>
+        <div class="dds"></div>
+        <a onclick="go('pos','mba')">MBA — Master of Business Admin.</a>
+        <a onclick="go('pos','mktm')">Master of Marketing</a>
+        <a onclick="go('pos','edm')">Master of Higher Education</a>
+      </div>
+    </div>
+    <div class="ni">
+      <button class="nk">Académico ▾</button>
+      <div class="dd">
+        <a onclick="go('academics')">Modelo Académico</a>
+        <a onclick="go('academics')">Certificates &amp; Microcredentials</a>
+        <div class="dds"></div>
+        <a onclick="go('jobs')">FBTU Jobs / Career Outcomes</a>
+      </div>
+    </div>
+    <div class="ni">
+      <button class="nk">Admisiones &amp; Costos ▾</button>
+      <div class="dd">
+        <a onclick="go('apply')" style="font-weight:700;color:var(--navy)">🎓 Apply Now</a>
+        <div class="dds"></div>
+        <a onclick="go('adm')">Cómo postular</a>
+        <a onclick="go('apply','intl')">International Applicants</a>
+        <a onclick="go('adm','aranceles')">Aranceles</a>
+        <a onclick="go('adm','becas')">Becas &amp; Financiamiento</a>
+        <a onclick="go('adm','reimb')" style="color:var(--red)">Política de Reembolsos</a>
+        <a onclick="go('adm','sap')">Progreso Académico (SAP)</a>
+        <div class="dds"></div>
+        <a onclick="go('reqinfo')" style="color:var(--red);font-weight:600">Request Information →</a>
+      </div>
+    </div>
+    <div class="ni">
+      <button class="nk">Vida Estudiantil ▾</button>
+      <div class="dd">
+        <a onclick="go('vida')">Canvas LMS</a>
+        <a onclick="go('vida','biblio')">Biblioteca Aquinas</a>
+        <a onclick="go('vida','career')">Career Services</a>
+        <a onclick="go('vida','grad')">Graduación</a>
+        <a onclick="go('vida','pols')">Políticas Estudiantiles</a>
+      </div>
+    </div>
+    <div class="ni"><button class="nk" onclick="go('contacto')">Contacto</button></div>
+  </div>
+  <div class="nr">
+    <a class="np" href="#" onclick="alert('Portal Canvas LMS — integración pendiente')">🔒 Portal estudiante</a>
+    <button class="btn lg b-red" onclick="go('adm')">Solicitar admisión →</button>
+  </div>
+  <div class="hb" id="hb" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob" id="mob">
+  <a onclick="go('home');toggleMob()">Inicio</a>
+  <a onclick="go('sobre');toggleMob()">Sobre FBTU</a>
+  <a onclick="go('pre');toggleMob()">Pregrado</a>
+  <a onclick="go('pos');toggleMob()">Posgrado / MBA</a>
+  <a onclick="go('apply');toggleMob()">Apply Now →</a>
+  <a onclick="go('adm');toggleMob()">Admisiones &amp; Costos</a>
+  <a onclick="go('academics');toggleMob()">Modelo Académico</a>
+  <a onclick="go('jobs');toggleMob()">FBTU Jobs</a>
+  <a onclick="go('vida');toggleMob()">Vida Estudiantil</a>
+  <a onclick="go('contacto');toggleMob()">Contacto</a>
+  <a onclick="go('adm');toggleMob()" style="background:var(--red);color:#fff;border-radius:4px;margin-top:7px">Solicitar admisión →</a>
+</div>
+
+<!-- ════════════════════════════════
+     PAGE: HOME
+════════════════════════════════ -->
+<div id="pg-home" class="pg on">
+
+<section class="hero">
+  <div class="hero-grid"></div><div class="hero-glow"></div>
+  <div class="wrap">
+    <div class="he-c">
+      <div class="he-ey">Miami, Florida, EE.UU. · 100% Online en Español</div>
+      <h1 class="he-h1">Built to <em>last.</em></h1>
+      <div class="he-h1b">Designed to transform.</div>
+      <p class="he-p">Título universitario americano <strong>apostillable en +120 países.</strong><br>Estudia donde estés, en tu idioma, a tu ritmo.<br>La plataforma de Harvard y MIT. El precio que mereces.</p>
+      <div class="he-btns">
+        <button class="btn lg b-red" onclick="go('apply')">Apply Now →</button>
+        <button class="btn lg b-out" onclick="go('pre')">Explorar programas</button>
+      </div>
+      <div class="he-stats">
+        <div class="hs"><div class="hs-n">+<span id="c1">0</span></div><div class="hs-l">países donde tu título es válido</div></div>
+        <div class="hs"><div class="hs-n">$<span id="c2">0</span></div><div class="hs-l">por crédito académico</div></div>
+        <div class="hs"><div class="hs-n"><span id="c3">0</span></div><div class="hs-l">programas de pregrado</div></div>
+        <div class="hs"><div class="hs-n"><span id="c4">0</span></div><div class="hs-l">programas de posgrado</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">scroll</div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="tb"><div class="tb-in wrap">
+  <div class="ti">🎓 <span class="ti-t">Título <strong>apostillable</strong> — Convenio de La Haya</span></div>
+  <div class="ti">💻 <span class="ti-t"><strong>Canvas LMS</strong> — Harvard, Yale, MIT</span></div>
+  <div class="ti">🌎 <span class="ti-t"><strong>100% online</strong> en español — sin TOEFL ni GRE</span></div>
+  <div class="ti">💰 <span class="ti-t">Desde <strong>$30/crédito</strong> — Becas disponibles</span></div>
+  <div class="ti">⏰ <span class="ti-t">Asincrónico — estudia <strong>24/7</strong> desde cualquier país</span></div>
+</div></div>
+
+<!-- PROGRAMS -->
+<section class="sec" style="background:var(--off)">
+<div class="wrap">
+  <div class="ph">
+    <div>
+      <div class="lbl fd">Oferta Académica</div>
+      <h2 class="ttl fd d1">Programas que <em>transforman</em> carreras</h2>
+      <p class="sub fd d2">4 escuelas · 20 programas · 120 cr. pregrado · 36 cr. posgrado · 100% online en español</p>
+    </div>
+    <div class="ptabs">
+      <button class="ptab on" onclick="fprog('all',this)">Todos</button>
+      <button class="ptab" onclick="fprog('pre',this)">Pregrado</button>
+      <button class="ptab" onclick="fprog('po',this)">Posgrado / MBA</button>
+    </div>
+  </div>
+  <div class="pgrid" id="pgrid">
+    <div class="pc pre fd" onclick="go('pre','bba')"><div class="pc-lv">Pregrado — B.S.</div><div class="pc-sc">School of Business &amp; Management</div><div class="pc-nm">Business Administration</div><div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">4 especializaciones</span></div><div class="pc-es"><div class="pc-e">General Management</div><div class="pc-e">Strategic Marketing &amp; Intl. Business</div><div class="pc-e">Finance</div><div class="pc-e">Human Resources</div></div><span class="pc-a">Ver programa →</span></div>
+    <div class="pc pre fd d1" onclick="go('pre','mkt')"><div class="pc-lv">Pregrado — B.S.</div><div class="pc-sc">School of Marketing &amp; Digital Commerce</div><div class="pc-nm">Marketing</div><div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">4 especializaciones</span></div><div class="pc-es"><div class="pc-e">Digital Marketing &amp; E-Commerce</div><div class="pc-e">Strategic Marketing &amp; Intl. Business</div><div class="pc-e">Human Resources Mgmt.</div><div class="pc-e">General Management</div></div><span class="pc-a">Ver programa →</span></div>
+    <div class="pc pre fd d2" onclick="go('pre','it')"><div class="pc-lv">Pregrado — B.S.</div><div class="pc-sc">School of Technology</div><div class="pc-nm">Information Technology</div><div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">2 especializaciones</span></div><div class="pc-es"><div class="pc-e">System Engineering</div><div class="pc-e">Software System Development</div></div><span class="pc-a">Ver programa →</span></div>
+    <div class="pc pre fd d3" onclick="go('pre','acct')"><div class="pc-lv">Pregrado — B.S.</div><div class="pc-sc">School of Finance &amp; Accounting</div><div class="pc-nm">Accounting &amp; Finance</div><div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">2 especializaciones</span></div><div class="pc-es"><div class="pc-e">Banking &amp; Finance</div><div class="pc-e">Finance Management</div></div><span class="pc-a">Ver programa →</span></div>
+    <div class="pc po fd" onclick="go('pos','mba')"><div class="pc-lv">Posgrado — MBA</div><div class="pc-sc">MBA Programs</div><div class="pc-nm">Master of Business Administration</div><div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">4 especializaciones</span></div><div class="pc-es"><div class="pc-e">General Management &amp; Innovation</div><div class="pc-e">Digital Marketing Management</div><div class="pc-e">Human Resources Management</div><div class="pc-e">Financial Management</div></div><span class="pc-a">Ver programa →</span></div>
+    <div class="pc po fd d1" onclick="go('pos','mktm')"><div class="pc-lv">Posgrado — Master</div><div class="pc-sc">School of Marketing</div><div class="pc-nm">Master of Marketing</div><div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">2 especializaciones</span></div><div class="pc-es"><div class="pc-e">Strategic Marketing Management</div><div class="pc-e">Digital Marketing Management</div></div><span class="pc-a">Ver programa →</span></div>
+    <div class="pc po fd d2" onclick="go('pos','edm')"><div class="pc-lv">Posgrado — Master</div><div class="pc-sc">School of Education</div><div class="pc-nm">Master of Higher Education</div><div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">2 especializaciones</span></div><div class="pc-es"><div class="pc-e">Online Education &amp; E-Learning Tech.</div><div class="pc-e">General Management &amp; Innovation</div></div><span class="pc-a">Ver programa →</span></div>
+  </div>
+</div>
+</section>
+
+<!-- WHY FBTU -->
+<section class="sec why">
+<div class="wrap" style="position:relative;z-index:1">
+  <div class="lbl" style="color:rgba(255,255,255,.3)">Por qué elegirnos</div>
+  <h2 class="ttl w fd">Your degree. <em>Their market.</em></h2>
+  <p class="sub w fd d1">Un título emitido en Florida te abre las puertas del mercado laboral más grande y mejor remunerado del mundo.</p>
+  <div class="why-sr">
+    <div class="wst"><div class="wst-n">6%</div><div class="wst-l">Crecimiento en gestión empresarial EE.UU. 2034 (BLS)</div></div>
+    <div class="wst"><div class="wst-n r">+1M</div><div class="wst-l">Vacantes anuales en dirección en EE.UU.</div></div>
+    <div class="wst"><div class="wst-n">75%</div><div class="wst-l">Mayor empleo formal para profesionales universitarios LATAM (OIT)</div></div>
+    <div class="wst"><div class="wst-n r">+120</div><div class="wst-l">Países donde tu título puede apostillarse legalmente</div></div>
+  </div>
+  <div class="why-g">
+    <div class="wi fd"><div class="wi-n">01</div><div class="wi-t">Título con validez internacional</div><div class="wi-d">Apostillable conforme al Convenio de La Haya. Validez legal reconocida en más de 120 países. Un solo título. Validez mundial.</div></div>
+    <div class="wi fd d1"><div class="wi-n">02</div><div class="wi-t">El idioma que hablas</div><div class="wi-d">Porque dominar los negocios no requiere cambiar de idioma. 100% en español. Sin TOEFL ni GRE.</div></div>
+    <div class="wi fd d2"><div class="wi-n">03</div><div class="wi-t">La plataforma de la élite</div><div class="wi-d">Canvas LMS. La misma plataforma que usan Harvard, Yale, Columbia y MIT. Más de 6,000 universidades en el mundo.</div></div>
+    <div class="wi fd d3"><div class="wi-n">04</div><div class="wi-t">Certificaciones del mercado</div><div class="wi-d">Google, LinkedIn, Meta Blueprint, Microsoft Power BI. Las credenciales que los reclutadores buscan en tu perfil.</div></div>
+    <div class="wi fd"><div class="wi-n">05</div><div class="wi-t">Acceso desde cualquier país</div><div class="wi-d">Bolivia, Perú, Colombia, Argentina, México, Honduras, El Salvador. Solo necesitas internet y determinación.</div></div>
+    <div class="wi fd d1"><div class="wi-n">06</div><div class="wi-t">Inversión real a precio justo</div><div class="wi-d">$30/crédito pregrado · $50/crédito posgrado. Becas hasta el 75%. Plan de pagos sin intereses.</div></div>
+  </div>
+  <div class="why-tl">Your future. <span>Your price.</span></div>
+</div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="sec">
+<div class="wrap">
+  <div class="lbl fd">Metodología</div>
+  <h2 class="ttl fd d1">Un entorno digital <em>de clase mundial</em></h2>
+  <p class="sub fd d2">Aprende con los mejores estándares académicos americanos, desde cualquier lugar de Latinoamérica.</p>
+  <div class="ml">
+    <div class="mit">
+      <div class="mi fd"><div class="mi-n">01</div><div><div class="mi-t">Aprendizaje aplicado</div><div class="mi-d">Casos reales, proyectos y simulaciones desde el primer día. Evaluaciones que replican situaciones empresariales reales.</div></div></div>
+      <div class="mi fd d1"><div class="mi-n">02</div><div><div class="mi-t">Docentes internacionales</div><div class="mi-d">Formación de posgrado + experiencia ejecutiva real. Office hours individuales. Feedback en máximo 72 horas. Ratio 30:1.</div></div></div>
+      <div class="mi fd d2"><div class="mi-n">03</div><div><div class="mi-t">Recursos 24/7</div><div class="mi-d">Canvas LMS. Biblioteca Aquinas Online con +200 fuentes académicas. Foros de debate. Comunidad activa de toda Latinoamérica.</div></div></div>
+      <div class="mi fd d3"><div class="mi-n">04</div><div><div class="mi-t">Asesor personalizado</div><div class="mi-d">Tutor asignado desde el primer día. Acompañamiento académico y orientación profesional durante toda la carrera.</div></div></div>
+    </div>
+    <div class="mpanel fd d2">
+      <div class="cvrow"><div class="cvdot">C</div><div><div class="cv-m">Canvas LMS</div><div class="cv-s">La plataforma de la educación de élite</div></div></div>
+      <p style="font-size:13px;color:rgba(255,255,255,.48);line-height:1.65;margin-bottom:4px">Más de <strong style="color:rgba(255,255,255,.78)">6,000 universidades</strong> en el mundo confían en Canvas.</p>
+      <div class="unig"><div class="unib">Harvard</div><div class="unib">Yale</div><div class="unib">MIT</div><div class="unib">Columbia</div></div>
+      <div class="aqb"><div class="aq-l">Biblioteca Digital</div><div class="aq-c"><div class="aq-n">Aquinas Online Library</div><div class="aq-d">+200 fuentes · Journals · eBooks · Bases de datos · 24/7</div></div></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="sec" style="background:var(--off)">
+<div class="wrap">
+  <div class="lbl fd">Valor diferencial</div>
+  <h2 class="ttl fd d1">Certificaciones que <em>el mercado pide</em></h2>
+  <p class="sub fd d2">No son añadidos decorativos. Son las credenciales que los reclutadores americanos y globales buscan en tu perfil. Tu CV habla por sí solo.</p>
+  <div class="cg">
+    <div class="cc fd"><div class="ci g">G</div><div class="cc-n">Google Career</div><div class="cc-d">Marketing digital, análisis de datos y gestión de proyectos avalados por Google. El más solicitado en Latinoamérica.</div></div>
+    <div class="cc fd d1"><div class="ci li">in</div><div class="cc-n">LinkedIn Learning</div><div class="cc-d">Certificados visibles en tu perfil de LinkedIn, en el momento exacto en que los reclutadores buscan candidatos.</div></div>
+    <div class="cc fd d2"><div class="ci m">M</div><div class="cc-n">Meta Blueprint</div><div class="cc-d">Certificación oficial de Meta para Facebook e Instagram Ads. La credencial de referencia para publicidad digital en LATAM.</div></div>
+    <div class="cc fd d3"><div class="ci ms">MS</div><div class="cc-n">Microsoft Power BI</div><div class="cc-d">Domina la inteligencia de negocios con la herramienta líder del mercado corporativo. Certificación oficial de Microsoft.</div></div>
+  </div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section class="sec">
+<div class="wrap">
+  <div class="lbl fd">Inversión académica</div>
+  <h2 class="ttl fd d1">Your future. <em>Your price.</em></h2>
+  <p class="sub fd d2">Educación universitaria americana de primer nivel a un costo diseñado para el profesional latinoamericano. Sin sorpresas.</p>
+  <div class="prl">
+    <div class="prc f fd">
+      <div class="prl-v">Pregrado — Bachelor of Science</div>
+      <div class="pr-a">$30</div><div class="pr-u">por crédito académico</div>
+      <div class="pr-t">~$3,600 total</div>
+      <div class="pr-n">120 créditos · + $100/año registro · + $25 technology fee/período</div>
+      <div class="pr-fs">
+        <div class="pr-f">4 carreras · 12 especializaciones</div>
+        <div class="pr-f">Canvas LMS + Biblioteca Aquinas 24/7</div>
+        <div class="pr-f">Tutor personalizado + Career Services</div>
+        <div class="pr-f">Certificaciones Google, LinkedIn, Meta, Microsoft</div>
+        <div class="pr-f">Título apostillable — Convenio de La Haya</div>
+      </div>
+      <button class="btn lg b-red" onclick="go('adm')" style="width:100%;justify-content:center">Solicitar admisión →</button>
+    </div>
+    <div class="prc s fd d1">
+      <div class="prl-v">Posgrado — Master / MBA</div>
+      <div class="pr-a">$50</div><div class="pr-u">por crédito académico</div>
+      <div class="pr-t">~$1,800 total</div>
+      <div class="pr-n">36 créditos · + $100 registro (solo 1er período) · + $25 technology fee/período</div>
+      <div class="pr-fs">
+        <div class="pr-f">3 maestrías · 8 especializaciones</div>
+        <div class="pr-f">Canvas LMS + Biblioteca Aquinas 24/7</div>
+        <div class="pr-f">Tono ejecutivo — para quienes ya dirigen</div>
+        <div class="pr-f">Título de maestría oficial de EE.UU.</div>
+      </div>
+      <button class="btn lg b-navy" onclick="go('adm')" style="width:100%;justify-content:center">Solicitar admisión →</button>
+    </div>
+  </div>
+  <div class="pr-ex fd">
+    <div><div class="pe-t">Becas disponibles</div><div class="pe-v">Hasta 75%</div><div class="pe-n">descuento · hasta 20 por período</div></div>
+    <div><div class="pe-t">Plan de pagos</div><div class="pe-v">Sin intereses</div><div class="pe-n">2 cuotas mensuales por período</div></div>
+    <div><div class="pe-t">Diploma oficial</div><div class="pe-v">$250</div><div class="pe-n">emitido en Florida · apostillable</div></div>
+  </div>
+</div>
+</section>
+
+<!-- ADMISSION STEPS -->
+<section class="sec" style="background:var(--off)">
+<div class="wrap">
+  <div class="lbl fd">Proceso de admisión</div>
+  <h2 class="ttl fd d1">5 pasos para <em>comenzar</em></h2>
+  <div class="al">
+    <div class="stps fd">
+      <div class="stp"><div class="stl"><div class="std">1</div><div class="stln"></div></div><div><div class="st-t">Formulario de admisión</div><div class="st-d">Completa el formulario online. Sin TOEFL, sin GRE, sin pruebas de inglés.</div></div></div>
+      <div class="stp"><div class="stl"><div class="std">2</div><div class="stln"></div></div><div><div class="st-t">Envío de documentos</div><div class="st-d">Documento de identidad + diploma de bachillerato (pregrado) o título universitario (posgrado) + transcriptos oficiales.</div></div></div>
+      <div class="stp"><div class="stl"><div class="std r">3</div><div class="stln"></div></div><div><div class="st-t">Evaluación y respuesta</div><div class="st-d">El equipo de admisiones evalúa tu solicitud. Respuesta en máximo 10 días hábiles.</div></div></div>
+      <div class="stp"><div class="stl"><div class="std r">4</div><div class="stln"></div></div><div><div class="st-t">Pago del registro</div><div class="st-d">Al ser aceptado, confirmas tu inscripción con el pago del Registration Fee de $100.</div></div></div>
+      <div class="stp"><div class="stl"><div class="std g">5</div></div><div><div class="st-t">¡Comenzar clases!</div><div class="st-d">Accedes a Canvas LMS, completas la orientación obligatoria y comienzas tu transformación profesional.</div></div></div>
+    </div>
+    <div class="apanel fd d2">
+      <div class="ap-t">Requisitos de admisión</div>
+      <div class="rqtabs">
+        <button class="rqtab on" onclick="swrq('rq1','rq2',this)">Pregrado</button>
+        <button class="rqtab" onclick="swrq('rq2','rq1',this)">Posgrado</button>
+      </div>
+      <div class="rql" id="rq1">
+        <div class="rqi"><div class="rqb"></div><div>Edad mínima 18 años (menores con autorización escrita)</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Documento de identidad oficial vigente</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Diploma de Bachillerato o equivalente</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Transcriptos oficiales del nivel secundario</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Sin TOEFL, GRE ni examen de ingreso</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Internet mínimo 512 Kbps + dispositivo compatible</div></div>
+      </div>
+      <div class="rql" id="rq2" style="display:none">
+        <div class="rqi"><div class="rqb"></div><div>Edad mínima 18 años</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Documento de identidad oficial vigente</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Título universitario de Bachelor o equivalente</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Transcriptos universitarios oficiales</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Sin TOEFL, GMAT ni GRE</div></div>
+      </div>
+      <button class="btn md b-red" onclick="go('adm')" style="width:100%;justify-content:center;margin-top:22px">Iniciar solicitud →</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec">
+<div class="wrap">
+  <div class="lbl fd">Historias reales</div>
+  <h2 class="ttl fd d1">Latinoamericanos que <em>ya decidieron</em></h2>
+  <div class="tg">
+    <div class="tc fd"><p class="tc-tx">"Estudiar con título americano desde Bolivia, en español y a mi ritmo, cambió completamente mis posibilidades laborales. Nunca pensé que sería tan accesible."</p><div class="tc-au"><div class="tc-av">MC</div><div><div class="tc-n">María C.</div><div class="tc-p">Bolivia · MBA General Management</div></div></div></div>
+    <div class="tc fd d1"><p class="tc-tx">"El Canvas LMS es impresionante. La misma plataforma que usan Harvard y Yale, para estudiar desde Perú en español. La calidad del contenido es extraordinaria."</p><div class="tc-au"><div class="tc-av">JP</div><div><div class="tc-n">Juan P.</div><div class="tc-p">Perú · B.S. Marketing Digital</div></div></div></div>
+    <div class="tc fd d2"><p class="tc-tx">"Poder apostillar mi título y tener validez en más de 120 países fue lo que me convenció. Ahora trabajo para una empresa colombo-americana con el respaldo de FBTU."</p><div class="tc-au"><div class="tc-av">AS</div><div><div class="tc-n">Andrea S.</div><div class="tc-p">Colombia · B.S. Business Administration</div></div></div></div>
+  </div>
+</div>
+</section>
+
+<!-- MIAMI -->
+<div class="miami">
+  <div class="mia-c">
+    <h2 class="mia-h">Miami,<br><span>Florida.</span></h2>
+    <p class="mia-d">Estados Unidos es el epicentro de la innovación, el emprendimiento y el desarrollo corporativo. Tu título emitido en Florida es apostillable conforme al Convenio de La Haya en +120 países.</p>
+    <div class="mia-a">📍 <strong>9100 South Dadeland Blvd</strong>, Suite 1531, Miami, FL 33156, EE.UU.</div>
+  </div>
+</div>
+
+<!-- CTA FINAL -->
+<div class="ctaf">
+  <div><h2 class="cf-h">Tu futuro empieza ahora.</h2><p class="cf-s"><em>Your future starts now.</em> · Sin TOEFL · Sin GRE · 100% online en español</p></div>
+  <div class="cf-ac">
+    <button class="btn lg b-wht" onclick="go('apply')">Apply Now →</button>
+    <button class="btn md" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)" onclick="go('reqinfo')">Request Information</button>
+    <div class="cf-ph">+1-954-558-2655 · Miami, Florida</div>
+  </div>
+</div>
+
+</div><!-- /pg-home -->
+
+<!-- ════════════════════════════════
+     PAGE: SOBRE FBTU
+════════════════════════════════ -->
+<div id="pg-sobre" class="pg">
+<div class="phero"><div class="wrap">
+  <div class="ph-ey">Sobre FBTU</div>
+  <h1>Florida Business &amp; Technology<br><em>University</em></h1>
+  <p>Built to last. Designed to transform. Una institución de educación superior americana, 100% online en español, para la comunidad hispana de Latinoamérica.</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+  <div class="abg">
+    <div>
+      <div class="lbl">Quiénes somos</div>
+      <h2 class="ttl">Una universidad <em>americana</em> para Latinoamérica</h2>
+      <p style="font-size:15px;color:var(--tm);line-height:1.75;margin-bottom:16px">Florida Business &amp; Technology University (FBTU) es una institución de educación superior establecida en <strong style="color:var(--t)">Miami, Florida, Estados Unidos</strong>, dedicada a impartir educación universitaria americana de excelencia bajo los altos estándares académicos de los Estados Unidos.</p>
+      <p style="font-size:15px;color:var(--tm);line-height:1.75;margin-bottom:16px">FBTU integra innovación, solidez académica y visión global para formar profesionales altamente competitivos, con pensamiento estratégico, dominio tecnológico y proyección internacional.</p>
+      <p style="font-size:15px;color:var(--tm);line-height:1.75">Fundada por los creadores de UNIPTEC (El Salvador, 2018). Inicio de operaciones: 2026. Institución 100% online y asincrónica.</p>
+    </div>
+    <div>
+      <div class="mbox">
+        <h3>Misión Institucional</h3>
+        <p>FBTU desarrolla profesionales mediante una educación universitaria americana de excelencia, integrando innovación y competencias tecnológicas, para liderar, generar valor e impulsar su proyección en entornos profesionales globales.</p>
+      </div>
+      <div style="background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:26px">
+        <h3 style="font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:11px" id="mision">Visión</h3>
+        <p style="font-size:14px;color:var(--tm);line-height:1.7">Ser la institución de referencia en educación superior en español con estándares americanos para la comunidad hispana de Latinoamérica y EE.UU., reconocida por la excelencia de sus egresados y su impacto en la transformación profesional de la región.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 Principios -->
+  <div style="margin-top:52px">
+    <div class="lbl">Filosofía Académica</div>
+    <h2 class="ttl">Los 4 principios que <em>nos definen</em></h2>
+    <div class="prg">
+      <div class="prc2"><div class="pn">01</div><div class="pt">Excelencia bajo estándares estadounidenses</div><div class="pd">FBTU desarrolla sus programas dentro del marco académico del sistema de educación superior americano, garantizando excelencia académica.</div></div>
+      <div class="prc2"><div class="pn">02</div><div class="pt">Educación aplicada y orientada a la ejecución</div><div class="pd">Los estudiantes desarrollan competencias, conocimientos y habilidades mediante la gestión de proyectos y experiencias aplicadas.</div></div>
+      <div class="prc2"><div class="pn">03</div><div class="pt">Tecnología educativa avanzada — Canvas LMS</div><div class="pd">FBTU integra plataformas LMS de nivel internacional con estructura académica bimestral orientada a progresión continua, accesible desde cualquier dispositivo.</div></div>
+      <div class="prc2"><div class="pn">04</div><div class="pt">Título americano con proyección internacional</div><div class="pd">Los programas otorgan títulos universitarios oficiales de EE.UU., apostillables conforme al Convenio de La Haya y reconocidos en más de 120 países.</div></div>
+    </div>
+  </div>
+
+  <!-- Equipo -->
+  <div style="margin-top:52px" id="equipo">
+    <div class="lbl">Equipo</div>
+    <h2 class="ttl">Equipo <em>directivo</em></h2>
+    <div class="tgrid">
+      <div class="tcard"><div class="tav">RQ</div><div class="trl">Presidente / CEO</div><div class="tnm">Rodrigo Quiroga di Pietro</div></div>
+      <div class="tcard"><div class="tav">CN</div><div class="trl">Director Académico</div><div class="tnm">Catalino Nuñez</div></div>
+      <div class="tcard"><div class="tav">FO</div><div class="trl">Director Administrativo</div><div class="tnm">Fernando Ortiz de Zarate</div></div>
+      <div class="tcard"><div class="tav">PV</div><div class="trl">Director de Admisiones</div><div class="tnm">Pablo Vargas</div></div>
+      <div class="tcard"><div class="tav">MB</div><div class="trl">Director Servicios Estudiante</div><div class="tnm">Maximiliano Bron</div></div>
+      <div class="tcard"><div class="tav">MP</div><div class="trl">Dir. Programas Pregrado</div><div class="tnm">Matias Poggi</div></div>
+      <div class="tcard"><div class="tav">GD</div><div class="trl">Dir. Programas Posgrado</div><div class="tnm">Gabriel Dominguez y Vence</div></div>
+    </div>
+  </div>
+
+  <!-- LICENSING — OBLIGATORIO POR LEY -->
+  <div style="margin-top:52px" id="licenc">
+    <div style="background:var(--red-lt);border:2px solid rgba(200,35,44,.38);border-radius:var(--r);padding:7px 14px;display:inline-flex;align-items:center;gap:7px;margin-bottom:18px">
+      <span style="color:var(--red);font-weight:700;font-size:12px">⚖ INFORMACIÓN LEGAL OBLIGATORIA — COMMISSION FOR INDEPENDENT EDUCATION, FLORIDA</span>
+    </div>
+    <div class="lbox">
+      <h3>Licensing &amp; Institutional Information</h3>
+      <div class="lr"><span class="ll">Nombre legal completo</span><span class="lv">Florida Business and Technology University, Inc. (d/b/a Florida Business &amp; Technology University)</span></div>
+      <div class="lr"><span class="ll">Estado de licenciamiento</span><span class="lv">En proceso de licenciamiento ante la Commission for Independent Education (CIE), Florida Department of Education.</span></div>
+      <div class="lr"><span class="ll">Acreditación</span><span class="lv"><strong style="color:var(--red)">FBTU actualmente NO está acreditada.</strong> Completar un programa en un idioma distinto al inglés puede reducir la empleabilidad donde se requiere inglés.</span></div>
+      <div class="lr"><span class="ll">Dirección del regulador</span><span class="lv">325 West Gaines Street, Suite 1414, Tallahassee, FL 32399-0400</span></div>
+      <div class="lr"><span class="ll">Teléfono del regulador</span><span class="lv">888-224-6684</span></div>
+      <div class="lr"><span class="ll">Transferibilidad de créditos</span><span class="lv">La aceptación de créditos de transferencia queda a discreción de la institución receptora. FBTU no puede garantizar la transferibilidad de créditos.</span></div>
+      <div class="lr"><span class="ll">Tipo de institución</span><span class="lv">Institución for-profit, constituida en el Estado de Florida, EE.UU.</span></div>
+      <div class="lr"><span class="ll">Inicio de operaciones</span><span class="lv">2026</span></div>
+    </div>
+  </div>
+
+  <!-- Catálogo -->
+  <div style="margin-top:36px;background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px" id="catalogo">
+    <div>
+      <div style="font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:5px">Catálogo Académico Oficial</div>
+      <div style="font-size:14px;color:var(--tm)">Catálogo Oficial FBTU — Octubre 2025 · Volumen 1.1 · Documento completo de políticas, programas y reglamentos.</div>
+    </div>
+    <button class="btn md b-navy">📄 Descargar PDF — Catalogo_FBTU_2026_Vol1.pdf</button>
+  </div>
+
+</div></section>
+<div class="ctaf"><div><h2 class="cf-h">¿Listo para dar el siguiente paso?</h2><p class="cf-s">Solicita admisión hoy. Sin TOEFL · Sin GRE · 100% online.</p></div><button class="btn lg b-wht" onclick="go('adm')">Solicitar admisión →</button></div>
+</div><!-- /pg-sobre -->
+
+<!-- ════════════════════════════════
+     PAGE: PREGRADO
+════════════════════════════════ -->
+<div id="pg-pre" class="pg">
+<div class="phero"><div class="wrap">
+  <div class="ph-ey">Programas de Pregrado</div>
+  <h1>Eleva tu potencial.<br><em>Domina los negocios.</em></h1>
+  <p>4 escuelas académicas · 12 programas · 120 créditos · 100% online en español · Título oficial de EE.UU. apostillable en +120 países</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+  <!-- datos clave -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px">
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">120</div><div style="font-size:13px;color:var(--tm);margin-top:5px">créditos académicos</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">12</div><div style="font-size:13px;color:var(--tm);margin-top:5px">programas de pregrado</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">4</div><div style="font-size:13px;color:var(--tm);margin-top:5px">escuelas académicas</div></div>
+  </div>
+  <!-- estructura -->
+  <div style="background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:22px;margin-bottom:44px">
+    <div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:10px">Estructura de todos los programas de pregrado</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+      <div style="flex:1;min-width:160px;background:var(--navy);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900">30 cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Educación General</div></div>
+      <div style="font-size:22px;color:var(--tm)">+</div>
+      <div style="flex:1;min-width:160px;background:var(--navy3);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900">60 cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Núcleo de la Carrera</div></div>
+      <div style="font-size:22px;color:var(--tm)">+</div>
+      <div style="flex:1;min-width:160px;background:var(--red);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900">30 cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Especialización</div></div>
+    </div>
+  </div>
+
+  <div class="ppg" id="ppg">
+
+    <div class="ppcard" id="bba">
+      <div class="pptop"><div class="ppbg">School of Business &amp; Management · Pregrado</div><div class="ppti">B.S. in Business Administration</div><div class="ppcc">120 créditos · Lic. en Administración de Empresas</div></div>
+      <div class="ppbd">
+        <p class="ppds">La carrera de negocios más demandada del mundo. Desarrolla pensamiento estratégico, liderazgo y capacidad de ejecución para dirigir organizaciones y generar valor en entornos globales.</p>
+        <div class="ppet">4 especializaciones disponibles</div>
+        <div class="ppe">
+          <div class="ppe-i">General Management — Dirección de Empresas</div>
+          <div class="ppe-i">Strategic Marketing &amp; International Business</div>
+          <div class="ppe-i">Finance — Dirección Financiera</div>
+          <div class="ppe-i">Human Resources — Dirección de RRHH</div>
+        </div>
+        <div class="acc">
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Educación General (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">CGS101</span><span>Technologies for Business Management I</span></div>
+              <div class="ci2"><span class="cc2">CGS102</span><span>Composition in English</span></div>
+              <div class="ci2"><span class="cc2">CGS103</span><span>Introduction to Environmental Science</span></div>
+              <div class="ci2"><span class="cc2">CGS104</span><span>Introduction to Psychology</span></div>
+              <div class="ci2"><span class="cc2">CGS105</span><span>Technologies for Business Management II</span></div>
+              <div class="ci2"><span class="cc2">CGS106</span><span>Introduction to Philosophy</span></div>
+              <div class="ci2"><span class="cc2">GBS101</span><span>Fundamentals of Administration and Management</span></div>
+              <div class="ci2"><span class="cc2">ACG101</span><span>Accounting Fundamentals</span></div>
+              <div class="ci2"><span class="cc2">MAT101</span><span>Applied Business Mathematics I</span></div>
+              <div class="ci2"><span class="cc2">MAT201</span><span>Applied Business Mathematics II</span></div>
+              <div class="ci2"><span class="cc2">INV201</span><span>Research Methodology and Critical Thinking</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Núcleo Business Administration (60 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><p style="font-size:13px;color:var(--tm)">Cursos de administración, finanzas, marketing, operaciones, estrategia empresarial, liderazgo y gestión de proyectos. Detalle completo en el Catálogo Oficial.</p></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><p style="font-size:13px;color:var(--tm)">6 asignaturas según opción elegida: General Management, Marketing, Finance o Human Resources. Incluye Proyecto Final de Especialización.</p></div>
+          </div>
+        </div>
+        <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Gerente General, Director Estratégico, Consultor Senior, Emprendedor con visión global.</div>
+        <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
+          <button class="btn sm b-red" onclick="go('adm')">Solicitar admisión</button>
+          <button class="btn sm b-outn">Descargar plan de estudios</button>
+          <a class="dl-btn" href="brochures/FBTU_Brochure_Business_Administration.pdf" download title="Descargar Brochure Business Administration">📄 Brochure PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ppcard" id="mkt">
+      <div class="pptop"><div class="ppbg">School of Marketing &amp; Digital Commerce · Pregrado</div><div class="ppti">B.S. in Marketing</div><div class="ppcc">120 créditos · Licenciatura en Marketing</div></div>
+      <div class="ppbd">
+        <p class="ppds">Forma estrategas de marketing con visión digital e internacional. Aprende a construir marcas, diseñar campañas y gestionar la experiencia del cliente en mercados globales.</p>
+        <div class="ppet">4 especializaciones disponibles</div>
+        <div class="ppe">
+          <div class="ppe-i">Digital Marketing &amp; E-Commerce</div>
+          <div class="ppe-i">Strategic Marketing &amp; International Business</div>
+          <div class="ppe-i">Human Resources Management</div>
+          <div class="ppe-i">General Management</div>
+        </div>
+        <div style="display:flex;gap:9px;margin-top:18px;flex-wrap:wrap">
+          <button class="btn sm b-red" onclick="go('adm')">Solicitar admisión</button>
+          <button class="btn sm b-outn">Descargar plan de estudios</button>
+          <a class="dl-btn" href="brochures/FBTU_Brochure_Marketing.pdf" download title="Descargar Brochure Marketing">📄 Brochure PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ppcard" id="it">
+      <div class="pptop"><div class="ppbg">School of Technology · Pregrado</div><div class="ppti">B.S. in Information Technology</div><div class="ppcc">120 créditos · Licenciatura en Tecnología de la Información</div></div>
+      <div class="ppbd">
+        <p class="ppds">Forma profesionales en tecnología con capacidad para diseñar, implementar y gestionar sistemas de información en entornos empresariales globales.</p>
+        <div class="ppet">2 especializaciones disponibles</div>
+        <div class="ppe">
+          <div class="ppe-i">System Engineering</div>
+          <div class="ppe-i">Software System Development</div>
+        </div>
+        <div style="display:flex;gap:9px;margin-top:18px;flex-wrap:wrap">
+          <button class="btn sm b-red" onclick="go('adm')">Solicitar admisión</button>
+          <button class="btn sm b-outn">Descargar plan de estudios</button>
+          <a class="dl-btn" href="brochures/FBTU_Brochure_Information_Technology.pdf" download title="Descargar Brochure IT">📄 Brochure PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ppcard" id="acct">
+      <div class="pptop"><div class="ppbg">School of Finance &amp; Accounting · Pregrado</div><div class="ppti">B.S. in Accounting &amp; Finance</div><div class="ppcc">120 créditos · Licenciatura en Contabilidad y Finanzas</div></div>
+      <div class="ppbd">
+        <p class="ppds">El mundo no necesita más contadores que registran el pasado. Necesita estrategas financieros que usen los números para decidir el futuro y tener el poder de hacerlo realidad.</p>
+        <div class="ppet">2 especializaciones disponibles</div>
+        <div class="ppe">
+          <div class="ppe-i">Banking &amp; Finance</div>
+          <div class="ppe-i">Finance Management</div>
+        </div>
+        <div style="display:flex;gap:9px;margin-top:18px;flex-wrap:wrap">
+          <button class="btn sm b-red" onclick="go('adm')">Solicitar admisión</button>
+          <button class="btn sm b-outn">Descargar plan de estudios</button>
+          <a class="dl-btn" href="brochures/FBTU_Brochure_Accounting_Finance.pdf" download title="Descargar Brochure Accounting &amp; Finance">📄 Brochure PDF</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div></section>
+<div class="ctaf"><div><h2 class="cf-h">Eleva tu potencial.<br>Domina los negocios.</h2><p class="cf-s">Inspira el cambio. · 120 créditos · 100% online en español.</p></div><button class="btn lg b-wht" onclick="go('adm')">Solicitar admisión →</button></div>
+</div><!-- /pg-pre -->
+
+<!-- ════════════════════════════════
+     PAGE: POSGRADO
+════════════════════════════════ -->
+<div id="pg-pos" class="pg">
+<div class="phero" style="background:linear-gradient(135deg,#09103a 0%,var(--navy) 100%)"><div class="wrap">
+  <div class="ph-ey">Programas de Posgrado</div>
+  <h1>Lead with knowledge.<br><em>Execute with confidence.</em></h1>
+  <p>Next level. No excuses. · 3 maestrías · 8 especializaciones · 36 créditos · Título de maestría oficial de EE.UU.</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px">
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">36</div><div style="font-size:13px;color:var(--tm);margin-top:5px">créditos académicos</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">8</div><div style="font-size:13px;color:var(--tm);margin-top:5px">programas de posgrado</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">3</div><div style="font-size:13px;color:var(--tm);margin-top:5px">escuelas de posgrado</div></div>
+  </div>
+  <!-- Núcleo común -->
+  <div style="background:var(--navy);border-radius:var(--r);padding:30px;margin-bottom:48px">
+    <div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:rgba(255,255,255,.48);margin-bottom:7px">Núcleo Común — compartido por todas las maestrías (24 créditos)</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:7px">
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:9px 13px;font-size:13px;color:rgba(255,255,255,.78)"><strong style="color:#fff;font-size:11px;display:block;margin-bottom:2px">MAN501</strong>Strategic Fundamentals for Management</div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:9px 13px;font-size:13px;color:rgba(255,255,255,.78)"><strong style="color:#fff;font-size:11px;display:block;margin-bottom:2px">HRS501</strong>Talent Management</div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:9px 13px;font-size:13px;color:rgba(255,255,255,.78)"><strong style="color:#fff;font-size:11px;display:block;margin-bottom:2px">MAN502</strong>Management and Executive Leadership</div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:9px 13px;font-size:13px;color:rgba(255,255,255,.78)"><strong style="color:#fff;font-size:11px;display:block;margin-bottom:2px">MAN503</strong>Strategic Management and Decision Making</div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:9px 13px;font-size:13px;color:rgba(255,255,255,.78)"><strong style="color:#fff;font-size:11px;display:block;margin-bottom:2px">FIN501</strong>Corporate Finance</div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:9px 13px;font-size:13px;color:rgba(255,255,255,.78)"><strong style="color:#fff;font-size:11px;display:block;margin-bottom:2px">MKT501</strong>Strategic Marketing Management</div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:9px 13px;font-size:13px;color:rgba(255,255,255,.78)"><strong style="color:#fff;font-size:11px;display:block;margin-bottom:2px">MKD501</strong>Strategic Management of Digital Marketing</div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:9px 13px;font-size:13px;color:rgba(255,255,255,.78)"><strong style="color:#fff;font-size:11px;display:block;margin-bottom:2px">MAN601</strong>Strategic Planning and Management</div>
+    </div>
+  </div>
+  <div class="ppg">
+    <div class="ppcard po" id="mba">
+      <div class="pptop"><div class="ppbg">MBA Programs · Posgrado</div><div class="ppti">Master of Business Administration</div><div class="ppcc">36 créditos · Maestría en Administración de Empresas</div></div>
+      <div class="ppbd">
+        <p class="ppds">El programa más demandado del mundo para directivos y emprendedores. Visión estratégica 360° del liderazgo ejecutivo: innovación, finanzas, marketing y gestión de personas.</p>
+        <div class="ppet">4 especializaciones</div>
+        <div class="ppe">
+          <div class="ppe-i">General Management &amp; Innovation</div>
+          <div class="ppe-i">Digital Marketing Management</div>
+          <div class="ppe-i">Human Resources Management</div>
+          <div class="ppe-i">Financial Management</div>
+        </div>
+        <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
+          <button class="btn sm b-red" onclick="go('adm')">Solicitar admisión</button>
+          <button class="btn sm b-outn">Descargar plan de estudios</button>
+          <a class="dl-btn" href="brochures/FBTU_Brochure_MBA.pdf" download>📄 Brochure PDF</a>
+        </div>
+      </div>
+    </div>
+    <div class="ppcard po" id="mktm">
+      <div class="pptop"><div class="ppbg">School of Marketing · Posgrado</div><div class="ppti">Master of Marketing</div><div class="ppcc">36 créditos · Maestría en Marketing</div></div>
+      <div class="ppbd">
+        <p class="ppds">Forma líderes de marketing con visión estratégica y digital. Para quienes quieren dirigir equipos comerciales y construir marcas con proyección internacional.</p>
+        <div class="ppet">2 especializaciones</div>
+        <div class="ppe">
+          <div class="ppe-i">Strategic Marketing Management</div>
+          <div class="ppe-i">Digital Marketing Management</div>
+        </div>
+        <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
+          <button class="btn sm b-red" onclick="go('adm')">Solicitar admisión</button>
+          <button class="btn sm b-outn">Descargar plan de estudios</button>
+          <a class="dl-btn" href="brochures/FBTU_Brochure_Master_Marketing.pdf" download>📄 Brochure PDF</a>
+        </div>
+      </div>
+    </div>
+    <div class="ppcard po" id="edm">
+      <div class="pptop"><div class="ppbg">School of Education · Posgrado</div><div class="ppti">Master of Higher Education</div><div class="ppcc">36 créditos · Maestría en Educación Superior</div></div>
+      <div class="ppbd">
+        <p class="ppds">Para quienes trabajan o quieren trabajar en instituciones educativas y plataformas de aprendizaje online. Combina pedagogía digital con gestión institucional.</p>
+        <div class="ppet">2 especializaciones</div>
+        <div class="ppe">
+          <div class="ppe-i">Online Education &amp; E-Learning Technologies</div>
+          <div class="ppe-i">General Management &amp; Innovation</div>
+        </div>
+        <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
+          <button class="btn sm b-red" onclick="go('adm')">Solicitar admisión</button>
+          <button class="btn sm b-outn">Descargar plan de estudios</button>
+          <a class="dl-btn" href="brochures/FBTU_Brochure_Master_Higher_Education.pdf" download>📄 Brochure PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+<div class="ctaf"><div><h2 class="cf-h">Next level.<br>No excuses.</h2><p class="cf-s">Lead with knowledge. Execute with confidence.</p></div><button class="btn lg b-wht" onclick="go('adm')">Solicitar admisión →</button></div>
+</div><!-- /pg-pos -->
+
+<!-- ════════════════════════════════
+     PAGE: ADMISIONES
+════════════════════════════════ -->
+<div id="pg-adm" class="pg">
+<div class="phero"><div class="wrap">
+  <div class="ph-ey">Admisiones &amp; Costos</div>
+  <h1>Todo lo que necesitas<br><em>para postular</em></h1>
+  <p>Sin TOEFL · Sin GRE · Sin pruebas de inglés · Respuesta en 10 días hábiles · Proceso 100% online</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+
+  <!-- Proceso -->
+  <div class="lbl">Proceso de admisión</div>
+  <h2 class="ttl">5 pasos para <em>comenzar</em></h2>
+  <div class="al" style="margin-top:36px">
+    <div class="stps">
+      <div class="stp"><div class="stl"><div class="std">1</div><div class="stln"></div></div><div><div class="st-t">Formulario de admisión online</div><div class="st-d">Completa el formulario en el sitio web de FBTU. Proceso 100% digital, sin presencia física.</div></div></div>
+      <div class="stp"><div class="stl"><div class="std">2</div><div class="stln"></div></div><div><div class="st-t">Envío de documentos</div><div class="st-d">Pregrado: diploma de bachillerato + transcriptos secundarios. Posgrado: título universitario + transcriptos. Más: documento de identidad oficial.</div></div></div>
+      <div class="stp"><div class="stl"><div class="std r">3</div><div class="stln"></div></div><div><div class="st-t">Evaluación — respuesta en 10 días</div><div class="st-d">El equipo de admisiones evalúa tu solicitud. Recibirás respuesta formal en máximo 10 días hábiles.</div></div></div>
+      <div class="stp"><div class="stl"><div class="std r">4</div><div class="stln"></div></div><div><div class="st-t">Pago del Registration Fee</div><div class="st-d">Al ser aceptado, confirmas con el pago del Registration Fee de $100. Pago online desde cualquier país.</div></div></div>
+      <div class="stp"><div class="stl"><div class="std g">5</div></div><div><div class="st-t">¡Comenzar clases en Canvas!</div><div class="st-d">Accedes a Canvas LMS, completas la orientación obligatoria y comienzas tu transformación profesional.</div></div></div>
+    </div>
+    <div class="apanel">
+      <div class="ap-t">Requisitos de admisión</div>
+      <div class="rqtabs">
+        <button class="rqtab on" onclick="swrq('rqa1','rqa2',this)">Pregrado</button>
+        <button class="rqtab" onclick="swrq('rqa2','rqa1',this)">Posgrado</button>
+      </div>
+      <div class="rql" id="rqa1">
+        <div class="rqi"><div class="rqb"></div><div>Edad mínima 18 años (menores con autorización escrita de padre o tutor)</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Documento de identidad oficial vigente</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Diploma de Bachillerato o equivalente</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Transcriptos oficiales del nivel secundario</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Sin TOEFL, GRE ni examen de ingreso</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Conexión a internet mínimo 512 Kbps + dispositivo compatible</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Google Chrome (recomendado) · Microsoft Office o equivalente</div></div>
+      </div>
+      <div class="rql" id="rqa2" style="display:none">
+        <div class="rqi"><div class="rqb"></div><div>Edad mínima 18 años</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Documento de identidad oficial vigente</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Título universitario de Bachelor o equivalente</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Transcriptos universitarios oficiales</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Sin TOEFL, GMAT ni GRE</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Conexión a internet mínimo 512 Kbps + dispositivo compatible</div></div>
+      </div>
+      <button class="btn md b-red" style="width:100%;justify-content:center;margin-top:22px" onclick="alert('Formulario de admisión — Integración CRM pendiente')">Iniciar solicitud →</button>
+    </div>
+  </div>
+
+  <!-- ARANCELES — OBLIGATORIO CIE -->
+  <div id="aranceles" style="margin-top:56px">
+    <div class="lnot"><span style="font-size:18px;flex-shrink:0">⚖️</span><div class="lnot-t"><strong>Requerimiento legal — Commission for Independent Education (CIE) de Florida:</strong> Esta tabla de aranceles debe publicarse en el sitio web de forma visible y actualizada. Es un requerimiento obligatorio de la CIE.</div></div>
+    <div class="lbl">Aranceles</div>
+    <h2 class="ttl">Tabla completa de <em>aranceles</em></h2>
+    <table class="ftable">
+      <thead><tr><th>Concepto</th><th>Monto</th></tr></thead>
+      <tbody>
+        <tr class="fhl"><td>Costo por crédito — Pregrado</td><td>$30 por crédito académico</td></tr>
+        <tr class="fhl"><td>Total estimado Pregrado (120 cr.)</td><td>Aproximadamente $3,600 + fees</td></tr>
+        <tr><td>Costo por crédito — Posgrado / MBA</td><td>$50 por crédito académico</td></tr>
+        <tr><td>Total estimado Posgrado (36 cr.)</td><td>Aproximadamente $1,800 + fees</td></tr>
+        <tr><td>Registro anual — Pregrado</td><td>$100 por año académico</td></tr>
+        <tr><td>Registro — Posgrado</td><td>$100 (solo el 1er período)</td></tr>
+        <tr><td>Technology fee</td><td>$25 por período académico</td></tr>
+        <tr><td>Examen de repetición</td><td>$30 cada intento (máximo 2 intentos adicionales)</td></tr>
+        <tr><td>Transcriptos oficiales</td><td>$50 por copia</td></tr>
+        <tr><td>Certificado de estatus oficial</td><td>$50</td></tr>
+        <tr><td>Emisión de diploma</td><td>$250 (no incluido en matrícula)</td></tr>
+        <tr><td>Evaluación crédito transferido</td><td>$10 por crédito evaluado</td></tr>
+        <tr style="background:var(--red-lt)"><td><strong>Textos y materiales</strong></td><td><strong>NO incluidos — estimado $500–$1,500 según programa</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- BECAS -->
+  <div id="becas" style="margin-top:52px">
+    <div class="lbl">Financiamiento</div>
+    <h2 class="ttl">Becas &amp; <em>Plan de pagos</em></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px">
+      <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:30px">
+        <div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1;margin-bottom:7px">75%</div>
+        <div style="font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:11px">Becas por mérito y necesidad</div>
+        <div class="rql">
+          <div class="rqi"><div class="rqb"></div><div>Hasta 20 programas de beca por período académico</div></div>
+          <div class="rqi"><div class="rqb"></div><div>Reducción del 25% al 75% de la matrícula publicada</div></div>
+          <div class="rqi"><div class="rqb"></div><div>Criterios: mérito académico, necesidad económica, afiliación con instituciones relacionadas</div></div>
+          <div class="rqi"><div class="rqb"></div><div>Solicitud online + declaración de necesidad o mérito</div></div>
+        </div>
+      </div>
+      <div style="background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:30px">
+        <div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1;margin-bottom:7px">0%</div>
+        <div style="font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:11px">Plan de pagos sin intereses</div>
+        <div class="rql">
+          <div class="rqi"><div class="rqb"></div><div>Matrícula pagadera en 2 cuotas mensuales por período</div></div>
+          <div class="rqi"><div class="rqb"></div><div>Sin intereses ni cargos adicionales</div></div>
+          <div class="rqi"><div class="rqb"></div><div>Disponible para estudiantes con limitaciones financieras</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REEMBOLSOS — OBLIGATORIO -->
+  <div id="reimb" style="margin-top:52px">
+    <div class="lnot"><span style="font-size:18px;flex-shrink:0">⚖️</span><div class="lnot-t"><strong>Política de Reembolsos — Obligatoria por ley.</strong> Debe publicarse en el sitio de forma clara y accesible. Requerimiento de la CIE de Florida.</div></div>
+    <div class="lbl">Legal</div>
+    <h2 class="ttl">Política de <em>reembolsos</em></h2>
+    <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:28px;margin-top:22px">
+      <div class="rql">
+        <div class="rqi"><div class="rqb"></div><div><strong>Reembolso TOTAL</strong> si el retiro ocurre antes de medianoche del <strong>día 8</strong> del período académico (período add/drop).</div></div>
+        <div class="rqi"><div class="rqb"></div><div><strong>Sin reembolso</strong> tras el vencimiento del período add/drop.</div></div>
+        <div class="rqi"><div class="rqb"></div><div>No se requiere pagar cuotas pendientes si el estudiante se retira dentro del período add/drop.</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Reembolsos emitidos dentro de <strong>30 días</strong> de la fecha oficial de terminación del estudiante.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAP -->
+  <div id="sap" style="margin-top:52px">
+    <div class="lbl">Políticas académicas</div>
+    <h2 class="ttl">Progreso Académico <em>Satisfactorio (SAP)</em></h2>
+    <p style="font-size:15px;color:var(--tm);line-height:1.7;margin-top:11px;margin-bottom:24px">Evaluación al final de cada período académico. Los estudiantes deben mantener los siguientes parámetros mínimos:</p>
+    <div class="sapg">
+      <div class="sapc"><div class="sap-v">2.0</div><div class="sap-l">GPA mínimo acumulado — Pregrado</div></div>
+      <div class="sapc"><div class="sap-v">3.0</div><div class="sap-l">GPA mínimo acumulado — Posgrado</div></div>
+      <div class="sapc"><div class="sap-v">67%</div><div class="sap-l">Créditos completados de créditos intentados cada 2 períodos consecutivos</div></div>
+      <div class="sapc"><div class="sap-v">150%</div><div class="sap-l">Tiempo máximo para graduarse — 150% de la duración del programa (ej: 180 cr. intentados para carrera de 120 cr.)</div></div>
+    </div>
+  </div>
+
+</div></section>
+<div class="ctaf"><div><h2 class="cf-h">Tu futuro empieza hoy.</h2><p class="cf-s">Solicita admisión en minutos. Sin TOEFL · Sin GRE · 100% online.</p></div><button class="btn lg b-wht" onclick="alert('Formulario de admisión — integración CRM pendiente')">Iniciar solicitud →</button></div>
+</div><!-- /pg-adm -->
+
+<!-- ════════════════════════════════
+     PAGE: VIDA ESTUDIANTIL
+════════════════════════════════ -->
+<div id="pg-vida" class="pg">
+<div class="phero"><div class="wrap">
+  <div class="ph-ey">Vida Estudiantil</div>
+  <h1>Un entorno digital<br><em>de clase mundial</em></h1>
+  <p>Canvas LMS · Biblioteca Aquinas · Career Services · Asesoría personalizada · 24/7 desde cualquier lugar</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+
+  <!-- Canvas LMS -->
+  <div class="lbl">Plataforma académica</div>
+  <h2 class="ttl">Canvas <em>LMS</em></h2>
+  <p class="sub" style="margin-bottom:24px">En FBTU estudiamos sobre Canvas, el sistema de gestión del aprendizaje más adoptado por universidades de élite: más de 6,000 instituciones — incluyendo Harvard, Yale, Columbia y MIT — confían en Canvas.</p>
+  <div class="vg">
+    <div class="vc"><div class="vic">📹</div><div class="vt">Sesiones grabadas</div><div class="vd">Accede a las grabaciones de sesiones en cualquier momento desde Canvas. Aprende a tu ritmo, sin restricciones de horario.</div></div>
+    <div class="vc"><div class="vic">📅</div><div class="vt">Avance estructurado</div><div class="vd">Actividades concretas semana a semana que consolidan lo aprendido y miden tu progreso.</div></div>
+    <div class="vc"><div class="vic">🌍</div><div class="vt">Comunidad latinoamericana</div><div class="vd">Intercambia perspectivas con estudiantes de toda Latinoamérica. Construye una red profesional que trasciende fronteras.</div></div>
+    <div class="vc"><div class="vic">📚</div><div class="vt">Biblioteca 24/7</div><div class="vd">Lecturas, videos, casos de estudio y bibliografía internacional, todo disponible desde cualquier dispositivo.</div></div>
+    <div class="vc"><div class="vic">👨‍🏫</div><div class="vt">Acceso directo al docente</div><div class="vd">Office hours y tutorías individuales. Feedback en máximo 72 horas. Ratio máximo 30 estudiantes por instructor.</div></div>
+    <div class="vc"><div class="vic">🔧</div><div class="vt">Soporte técnico</div><div class="vd">Chat en vivo, teléfono y email. Respuesta garantizada en 24 horas. Sistema en la nube con alta disponibilidad.</div></div>
+  </div>
+
+  <!-- Biblioteca -->
+  <div id="biblio" style="margin-top:52px">
+    <div class="lbl">Biblioteca digital</div>
+    <h2 class="ttl">Aquinas <em>Online Library</em></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:24px">
+      <div style="background:var(--navy);border-radius:var(--r);padding:30px">
+        <div style="font-family:var(--H);font-size:46px;font-weight:900;color:#fff;line-height:1;margin-bottom:7px">+200</div>
+        <div style="font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--red);margin-bottom:11px">fuentes académicas</div>
+        <div style="font-size:14px;color:rgba(255,255,255,.62);line-height:1.65">Bases de datos · Journals académicos internacionales · eBooks · Artículos científicos. Acceso con credenciales institucionales desde Canvas. Disponible 24/7.</div>
+      </div>
+      <div style="background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:30px">
+        <div style="font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:12px">Editoriales disponibles</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px">
+          <span style="background:var(--navy-lt);border-radius:4px;padding:6px 11px;font-size:13px;color:var(--navy);font-weight:600">Pearson</span>
+          <span style="background:var(--navy-lt);border-radius:4px;padding:6px 11px;font-size:13px;color:var(--navy);font-weight:600">McGraw-Hill</span>
+          <span style="background:var(--navy-lt);border-radius:4px;padding:6px 11px;font-size:13px;color:var(--navy);font-weight:600">Cengage</span>
+          <span style="background:var(--navy-lt);border-radius:4px;padding:6px 11px;font-size:13px;color:var(--navy);font-weight:600">Wiley</span>
+          <span style="background:var(--navy-lt);border-radius:4px;padding:6px 11px;font-size:13px;color:var(--navy);font-weight:600">Harvard Business Review</span>
+        </div>
+        <div style="margin-top:18px;padding-top:18px;border-top:1px solid var(--bd)">
+          <div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:9px">Requisitos técnicos mínimos</div>
+          <div style="font-size:13px;color:var(--tm);line-height:1.8">
+            💻 PC, laptop o tablet con procesador Dual Core<br>
+            🌐 Conexión mínima de 512 Kbps<br>
+            🔍 Google Chrome (recomendado)<br>
+            📄 Microsoft Office, antivirus, Adobe Acrobat
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Career Services -->
+  <div id="career" style="margin-top:52px">
+    <div class="lbl">Empleabilidad</div>
+    <h2 class="ttl">Career <em>Services</em></h2>
+    <p class="sub" style="margin-bottom:24px">Asistencia en búsqueda de empleo, gratuita para todos los estudiantes. <em>Sin garantía de empleo</em> — pero con las mejores herramientas para lograrlo.</p>
+    <div class="vg">
+      <div class="vc"><div class="vic">💼</div><div class="vt">Búsqueda de empleo</div><div class="vd">Asistencia personalizada para identificar oportunidades laborales en Latinoamérica y Estados Unidos.</div></div>
+      <div class="vc"><div class="vic">📄</div><div class="vt">Documentos laborales</div><div class="vd">Preparación de CV, carta de presentación y perfil de LinkedIn optimizado para el mercado corporativo internacional.</div></div>
+      <div class="vc"><div class="vic">🌐</div><div class="vt">Bolsa de trabajo internacional</div><div class="vd">Acceso a oportunidades laborales internacionales. Alianzas con empresas y organizaciones globales.</div></div>
+      <div class="vc"><div class="vic">🤖</div><div class="vt">IA aplicada a tu perfil</div><div class="vd">Optimiza tu CV con inteligencia artificial. Tests de liderazgo, marketing y gestión para medir tu progreso profesional.</div></div>
+    </div>
+  </div>
+
+  <!-- Graduación -->
+  <div id="grad" style="margin-top:52px">
+    <div class="lbl">Graduación</div>
+    <h2 class="ttl">Requisitos de <em>graduación</em></h2>
+    <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:28px;margin-top:22px">
+      <div class="rql">
+        <div class="rqi"><div class="rqb"></div><div>Completar el programa completo (todos los créditos requeridos)</div></div>
+        <div class="rqi"><div class="rqb"></div><div>GPA mínimo acumulado: <strong>2.0</strong> (pregrado) / <strong>3.0</strong> (posgrado)</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Sin deudas pendientes con la institución</div></div>
+        <div class="rqi"><div class="rqb"></div><div>Costo del diploma: <strong>$250</strong> (no incluido en matrícula, se paga al graduarse)</div></div>
+      </div>
+    </div>
+    <div class="lbl" style="margin-top:30px">Honores académicos</div>
+    <div class="hons">
+      <div class="hon"><div class="hon-t">Cum Laude</div><div class="hon-g">3.50</div><div class="hon-r">GPA 3.50 – 3.69</div></div>
+      <div class="hon"><div class="hon-t">Magna Cum Laude</div><div class="hon-g">3.70</div><div class="hon-r">GPA 3.70 – 3.89</div></div>
+      <div class="hon" style="background:var(--red)"><div class="hon-t" style="color:#fff">Summa Cum Laude</div><div class="hon-g">3.90</div><div class="hon-r">GPA 3.90 o superior</div></div>
+    </div>
+  </div>
+
+  <!-- Políticas -->
+  <div id="pols" style="margin-top:52px">
+    <div class="lnot"><span style="font-size:18px;flex-shrink:0">⚖️</span><div class="lnot-t"><strong>Políticas obligatorias por ley federal de EE.UU. y regulaciones CIE de Florida.</strong> Todos los estudiantes deben conocer y cumplir estas políticas.</div></div>
+    <div class="lbl">Reglamentos</div>
+    <h2 class="ttl">Políticas &amp; <em>reglamentos estudiantiles</em></h2>
+    <div class="polls">
+      <div class="poll"><span class="poli">📋</span><div><div class="pol-t">Política de asistencia</div><div class="pol-d">Asistencia obligatoria. Completar tareas semanales y participar en foros. Más del 10% de ausencias injustificadas resulta en probación académica.</div></div></div>
+      <div class="poll"><span class="poli">🎓</span><div><div class="pol-t">Integridad académica</div><div class="pol-d">Plagio y deshonestidad académica pueden resultar en probación, suspensión o expulsión permanente. FBTU aplica política estricta de integridad.</div></div></div>
+      <div class="poll"><span class="poli">📁</span><div><div class="pol-t">FERPA — Family Educational Rights and Privacy Act</div><div class="pol-d">Los estudiantes tienen derecho a inspeccionar y corregir sus registros académicos. Ley federal de EE.UU. que protege la privacidad de los registros educativos.</div><span class="pol-b">Req. por ley federal</span></div></div>
+      <div class="poll"><span class="poli">🚫</span><div><div class="pol-t">Drug &amp; Alcohol Awareness Policy</div><div class="pol-d">Información sobre leyes, consecuencias y programas de rehabilitación en Miami-Dade. Prohibido el uso de drogas y alcohol en actividades institucionales.</div><span class="pol-b">Req. por ley</span></div></div>
+      <div class="poll"><span class="poli">📝</span><div><div class="pol-t">Grievance Policy</div><div class="pol-d">Quejas formales por escrito al Director de Admisiones, Pablo Vargas. La institución emite aviso de resolución en 7 días hábiles. Si no se resuelve, el estudiante puede contactar a la CIE al 888-224-6684.</div><span class="pol-b">Req. por ley</span></div></div>
+      <div class="poll"><span class="poli">🛡️</span><div><div class="pol-t">Conducta estudiantil</div><div class="pol-d">Prohibido: acoso, bullying (presencial y online), drogas, alcohol, forjamiento de documentos. Violaciones pueden resultar en suspensión o expulsión permanente.</div></div></div>
+    </div>
+  </div>
+
+</div></section>
+<div class="ctaf"><div><h2 class="cf-h">¿Ya eres estudiante FBTU?</h2><p class="cf-s">Accede a Canvas LMS — tu entorno digital de clase mundial.</p></div><button class="btn lg b-wht" onclick="alert('Acceso a Canvas LMS — integración pendiente')">Ingresar a Canvas →</button></div>
+</div><!-- /pg-vida -->
+
+<!-- ════════════════════════════════
+     PAGE: CONTACTO
+════════════════════════════════ -->
+<div id="pg-contacto" class="pg">
+<div class="phero"><div class="wrap">
+  <div class="ph-ey">Contacto</div>
+  <h1>Estamos aquí<br><em>para ayudarte</em></h1>
+  <p>Escríbenos, llámanos o completa el formulario. El equipo de admisiones responde en 24 horas.</p>
+</div></div>
+<section class="sec"><div class="wrap">
+  <div class="cl2">
+    <div>
+      <div class="lbl">Formulario de contacto</div>
+      <h2 class="ttl">Solicita <em>información</em></h2>
+      <div style="margin-top:26px">
+        <div class="fr">
+          <div class="fg"><label class="cfl">Nombre completo</label><input type="text" class="cfi" placeholder="Tu nombre completo"></div>
+          <div class="fg"><label class="cfl">Correo electrónico</label><input type="email" class="cfi" placeholder="tu@email.com"></div>
+        </div>
+        <div class="fr">
+          <div class="fg"><label class="cfl">País</label><input type="text" class="cfi" placeholder="Bolivia, Perú, Colombia..."></div>
+          <div class="fg"><label class="cfl">Teléfono / WhatsApp</label><input type="tel" class="cfi" placeholder="+591..."></div>
+        </div>
+        <div class="fg"><label class="cfl">Programa de interés</label>
+          <select class="cfi" style="appearance:none;background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23757575' d='M6 8L1 3h10z'/%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:right 13px center">
+            <option value="">Selecciona un programa...</option>
+            <optgroup label="Pregrado">
+              <option>B.S. Business Administration</option>
+              <option>B.S. Marketing</option>
+              <option>B.S. Information Technology</option>
+              <option>B.S. Accounting &amp; Finance</option>
+            </optgroup>
+            <optgroup label="Posgrado">
+              <option>MBA — Master of Business Administration</option>
+              <option>Master of Marketing</option>
+              <option>Master of Higher Education</option>
+            </optgroup>
+            <option>Aún no lo sé — quiero más información</option>
+          </select>
+        </div>
+        <div class="fg"><label class="cfl">Mensaje</label><textarea class="cfi cfta" placeholder="¿En qué podemos ayudarte?"></textarea></div>
+        <button class="btn lg b-red" style="width:100%;justify-content:center" onclick="alert('Formulario enviado — Integración CRM / HubSpot pendiente')">Enviar mensaje →</button>
+        <p style="font-size:12px;color:var(--tm);margin-top:10px;line-height:1.6">Al enviar aceptas nuestra <a onclick="go('legal')" style="color:var(--navy);text-decoration:underline">política de privacidad</a>. FBTU no vende datos personales a terceros.</p>
+      </div>
+    </div>
+    <div>
+      <div class="lbl">Directorio</div>
+      <h2 class="ttl" style="font-size:clamp(22px,2.8vw,34px)">Información de <em>contacto</em></h2>
+      <div style="margin-top:26px">
+        <div class="cib"><span class="ci-ic">🎓</span><div><div class="ci-l">Admisiones</div><div class="ci-v">Pablo Vargas — Director de Admisiones</div><div class="ci-n">Consultas sobre postulaciones, requisitos y procesos de admisión</div></div></div>
+        <div class="cib"><span class="ci-ic">👥</span><div><div class="ci-l">Servicios al Estudiante</div><div class="ci-v">Maximiliano Bron — Director</div><div class="ci-n">Consultas de estudiantes activos, soporte académico</div></div></div>
+        <div class="cib"><span class="ci-ic">📞</span><div><div class="ci-l">Teléfono general</div><div class="ci-v">+1-954-558-2655</div><div class="ci-n">Lunes a viernes · Horario EST (Eastern Standard Time)</div></div></div>
+        <div class="cib"><span class="ci-ic">📍</span><div><div class="ci-l">Sede física</div><div class="ci-v">9100 South Dadeland Blvd, Suite 1531<br>Miami, FL 33156, EE.UU.</div></div></div>
+        <div class="cib"><span class="ci-ic">💬</span><div><div class="ci-l">Soporte Canvas / Técnico</div><div class="ci-v">Chat en vivo, teléfono y email</div><div class="ci-n">Respuesta garantizada en 24 horas</div></div></div>
+        <div class="maph">
+          <span style="font-size:30px">📍</span>
+          <strong>Miami, FL 33156</strong>
+          <span style="font-size:12px">9100 S. Dadeland Blvd, Suite 1531</span>
+          <span style="font-size:11px;color:var(--navy);text-decoration:underline">Integrar Google Maps Embed API</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></section>
+</div><!-- /pg-contacto -->
+
+<!-- ════════════════════════════════
+     PAGE: LEGAL
+════════════════════════════════ -->
+<div id="pg-legal" class="pg">
+<div class="phero" style="background:linear-gradient(135deg,#2a0a0c 0%,var(--red2) 100%)"><div class="wrap">
+  <div class="ph-ey">Información Legal</div>
+  <h1>Políticas &amp; <em>Documentos Legales</em></h1>
+  <p>Información legal obligatoria requerida por la Commission for Independent Education de Florida y la ley federal de EE.UU.</p>
+</div></div>
+<section class="sec"><div class="wrap">
+  <div class="lpc">
+    <div class="lwarn">
+      <strong>⚠ AVISO LEGAL OBLIGATORIO — COMMISSION FOR INDEPENDENT EDUCATION (CIE) DE FLORIDA</strong>
+      <p>© 2026 Florida Business and Technology University, Inc. Florida Business &amp; Technology University está en proceso de licenciamiento ante la Commission for Independent Education, Florida Department of Education, 325 West Gaines Street, Suite 1414, Tallahassee, FL 32399-0400, teléfono 888-224-6684. <strong>Actualmente NO está acreditada.</strong> Todos los cursos se dictan únicamente en español. Completar un programa en un idioma distinto al inglés puede reducir la empleabilidad donde se requiere inglés. La aceptación de créditos de transferencia queda a discreción de la institución receptora. FBTU no garantiza empleo al graduarse.</p>
+    </div>
+    <h3>Política de Privacidad</h3>
+    <p>Florida Business and Technology University, Inc. recopila datos personales exclusivamente para fines académicos, administrativos y de comunicación institucional. FBTU no vende, alquila ni comparte datos personales con terceros con fines comerciales. Los datos se almacenan en sistemas seguros en la nube (AWS) y se protegen conforme a las leyes aplicables de EE.UU. y de los países de residencia de los estudiantes.</p>
+    <h3>Términos y Condiciones de Uso</h3>
+    <p>El uso del sitio web fbtu.edu y sus servicios digitales implica la aceptación plena de estos términos. Todo el contenido del sitio es propiedad de Florida Business and Technology University, Inc. Se prohíbe la reproducción, distribución o modificación sin autorización expresa por escrito.</p>
+    <h3>Non-Discrimination Policy</h3>
+    <p>Florida Business and Technology University, Inc. no discrimina en sus programas de admisión, académicos ni administrativos por razones de raza, color, sexo, edad, religión, discapacidad u origen nacional. Esta política cumple los requisitos de la ley federal de los Estados Unidos y es aplicable a todos los estudiantes, solicitantes de admisión y personal.</p>
+    <h3>Consumer Information / Disclosures</h3>
+    <ul>
+      <li>Los costos de materiales y textos académicos NO están incluidos en la matrícula (estimado: $500–$1,500 según programa y período).</li>
+      <li>El costo del diploma ($250) no está incluido en la matrícula. Se paga al momento de la graduación.</li>
+      <li>Todos los cursos se dictan únicamente en español. La instrucción en un idioma distinto al inglés puede limitar oportunidades de empleo en mercados que exigen inglés.</li>
+      <li>FBTU no garantiza empleo al graduarse. Career Services es gratuito pero no ofrece garantía de colocación laboral.</li>
+      <li>FBTU actualmente NO está acreditada. La falta de acreditación puede afectar la transferibilidad de créditos y el reconocimiento del título en ciertas instituciones.</li>
+    </ul>
+    <h3>Copyright Policy</h3>
+    <p>Está estrictamente prohibido copiar, distribuir o reproducir software, música, películas, libros u otros materiales protegidos por derechos de autor sin la autorización expresa del titular. Las violaciones al copyright están sujetas a penalidades civiles y criminales bajo la ley de los Estados Unidos (Digital Millennium Copyright Act – DMCA).</p>
+    <h3>FERPA — Family Educational Rights and Privacy Act</h3>
+    <p>Conforme a la Ley FERPA, los estudiantes de FBTU tienen derecho a: (1) inspeccionar y revisar sus registros académicos, (2) solicitar la corrección de registros inexactos, y (3) controlar la divulgación de información personal contenida en sus registros educativos. Para ejercer estos derechos, contactar al Director de Servicios al Estudiante, Maximiliano Bron.</p>
+    <h3>Drug &amp; Alcohol Awareness Policy</h3>
+    <p>FBTU promueve un entorno académico libre de drogas y alcohol conforme a las leyes del Estado de Florida y del condado de Miami-Dade. Se proporciona información sobre las consecuencias legales del uso de sustancias controladas y los programas de rehabilitación disponibles en la comunidad de Miami-Dade.</p>
+    <h3>Grievance Policy — Proceso de quejas</h3>
+    <p>Los estudiantes que deseen presentar una queja formal deben hacerlo por escrito dirigida al Director de Admisiones, Pablo Vargas. La institución emitirá un aviso de resolución dentro de los 7 días hábiles siguientes a la recepción de la queja. Si la queja no se resuelve satisfactoriamente, el estudiante puede contactar directamente a la Commission for Independent Education al teléfono 888-224-6684, o escribir a: 325 West Gaines Street, Suite 1414, Tallahassee, FL 32399-0400.</p>
+    <h3>Tuition Refund Policy</h3>
+    <ul>
+      <li>Reembolso TOTAL si el retiro ocurre antes de medianoche del día 8 del período académico (período add/drop).</li>
+      <li>Sin reembolso tras el vencimiento del período add/drop.</li>
+      <li>No se requiere pagar cuotas pendientes si el estudiante se retira dentro del período add/drop.</li>
+      <li>Reembolsos emitidos dentro de 30 días de la fecha oficial de terminación del estudiante.</li>
+    </ul>
+    <h3>Licensing Disclosure</h3>
+    <p>Florida Business and Technology University, Inc. (d/b/a Florida Business &amp; Technology University) está en proceso de licenciamiento ante la Commission for Independent Education, Florida Department of Education. Dirección regulador: 325 West Gaines Street, Suite 1414, Tallahassee, FL 32399-0400. Teléfono: 888-224-6684. La institución actualmente NO está acreditada por ninguna agencia de acreditación reconocida por el Departamento de Educación de los Estados Unidos.</p>
+  </div>
+</div></section>
+</div><!-- /pg-legal -->
+
+
+<!-- ════════════════════════════════
+     PAGE: ACADEMIC MODEL + CERTIFICATES
+════════════════════════════════ -->
+<div id="pg-academics" class="pg">
+<div class="phero" style="background:linear-gradient(135deg,#0d1442 0%,var(--navy) 70%,#1a2d8a 100%)"><div class="wrap">
+  <div class="ph-ey">Modelo Académico</div>
+  <h1>Cómo aprendes en <em>FBTU</em></h1>
+  <p>Un modelo diseñado para que el conocimiento se convierta en acción desde el primer día. Rigor académico americano, aplicado a la realidad latinoamericana.</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+
+  <!-- Academic Model -->
+  <div class="lbl">Modelo de aprendizaje</div>
+  <h2 class="ttl">Los 4 pilares del <em>modelo FBTU</em></h2>
+  <p class="sub" style="margin-bottom:32px">Cada decisión de diseño curricular tiene un propósito: que el estudiante no solo comprenda los conceptos, sino que sea capaz de aplicarlos desde el primer día en su entorno profesional.</p>
+
+  <div class="acad-grid">
+    <div class="acad-card">
+      <div class="acad-icon">🎯</div>
+      <div class="acad-ttl">Aprendizaje aplicado desde el día 1</div>
+      <div class="acad-desc">Cada asignatura integra retos de escenarios reales ("real-life cases") que llevan la teoría directamente a la práctica. Las evaluaciones simulan situaciones que el profesional enfrentará en organizaciones reales. Aprenderás mediante estudios de caso, proyectos aplicados y ejercicios prácticos en todas las asignaturas.</div>
+    </div>
+    <div class="acad-card">
+      <div class="acad-icon">🌐</div>
+      <div class="acad-ttl">Instrucción con docentes internacionales</div>
+      <div class="acad-desc">Profesores que combinan formación académica de posgrado con experiencia profesional real en su área. Office hours y tutorías individuales para resolución personalizada de dudas. Feedback garantizado en máximo 72 horas tras cada entrega. Ratio máximo 30:1.</div>
+    </div>
+    <div class="acad-card">
+      <div class="acad-icon">📚</div>
+      <div class="acad-ttl">Recursos autónomos y comunidad activa</div>
+      <div class="acad-desc">Acceso a lecturas, materiales digitales y bibliografía académica internacional de editoriales como Pearson, McGraw-Hill, Cengage y Wiley. Foros de debate y espacios de co-creación que construyen conexiones reales entre profesionales de toda Latinoamérica. Contenido disponible 24/7 en Canvas.</div>
+    </div>
+    <div class="acad-card">
+      <div class="acad-icon">🤝</div>
+      <div class="acad-ttl">Acompañamiento cercano de principio a fin</div>
+      <div class="acad-desc">Cada estudiante cuenta con un asesor académico dedicado que lo guía durante toda su trayectoria. Orientación profesional, workshops de empleabilidad y acceso a Career Services. El objetivo es que ningún estudiante avance solo ni se pierda en el camino.</div>
+    </div>
+  </div>
+
+  <!-- Structure Block -->
+  <div style="margin-top:52px;background:var(--navy);border-radius:var(--r);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+    <div>
+      <div style="font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:12px">Estructura académica</div>
+      <h3 style="font-family:var(--H);font-size:28px;font-weight:900;color:#fff;line-height:1.05;margin-bottom:16px">Períodos bimestrales con progresión continua</h3>
+      <p style="font-size:15px;color:rgba(255,255,255,.65);line-height:1.75;margin-bottom:20px">El año académico de FBTU está estructurado en períodos bimestrales de 8 semanas, diseñados para mantener ritmo de aprendizaje sostenido sin sobrecargar al estudiante que trabaja.</p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,.75)"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>Cada semana tiene actividades concretas y evaluaciones claras</div>
+        <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,.75)"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>Avance visible semana a semana en Canvas</div>
+        <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,.75)"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>Sesiones grabadas disponibles en cualquier momento</div>
+        <div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,.75)"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>Foros semanales de debate con la comunidad</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:#fff;line-height:1">8</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">semanas por período</div></div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:var(--red);line-height:1">72h</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">máx. feedback docente</div></div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:#fff;line-height:1">30:1</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">ratio máx. estudiantes/docente</div></div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:var(--red);line-height:1">24/7</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">acceso a recursos Canvas</div></div>
+    </div>
+  </div>
+
+  <!-- Assessment model -->
+  <div style="margin-top:52px">
+    <div class="lbl">Evaluación</div>
+    <h2 class="ttl">Modelo de <em>evaluación continua</em></h2>
+    <p class="sub" style="margin-bottom:28px">Las evaluaciones en FBTU están diseñadas para medir el desempeño real, no la memorización. Cada tipo de evaluación cumple un propósito específico en la formación del profesional.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
+      <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:7px">Proyectos aplicados</div><div style="font-size:13px;color:var(--tm);line-height:1.6">Resuelven problemas empresariales reales o simulados con metodologías del programa.</div></div>
+      <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:7px">Estudios de caso</div><div style="font-size:13px;color:var(--tm);line-height:1.6">Análisis profundo de situaciones reales de empresas latinoamericanas y globales.</div></div>
+      <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:7px">Foros de debate</div><div style="font-size:13px;color:var(--tm);line-height:1.6">Construcción colectiva del conocimiento y desarrollo del pensamiento crítico.</div></div>
+      <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:7px">Proyecto final integrador</div><div style="font-size:13px;color:var(--tm);line-height:1.6">Capstone que integra todas las competencias del programa. Puede involucrar una empresa real.</div></div>
+    </div>
+  </div>
+
+  <!-- GPA system -->
+  <div style="margin-top:52px;background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:32px">
+    <div style="font-family:var(--H);font-size:16px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:20px">Sistema de calificaciones — GPA</div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead><tr><th style="background:var(--navy);color:#fff;font-family:var(--H);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:10px 14px;text-align:left">Calificación</th><th style="background:var(--navy);color:#fff;font-family:var(--H);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:10px 14px;text-align:left">Rango de puntos</th><th style="background:var(--navy);color:#fff;font-family:var(--H);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:10px 14px;text-align:left">Equivalente GPA</th><th style="background:var(--navy);color:#fff;font-family:var(--H);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;padding:10px 14px;text-align:left">Descripción</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:9px 14px;border-bottom:1px solid var(--bd);font-weight:600">A</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">90–100</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">4.0</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">Sobresaliente</td></tr>
+          <tr style="background:var(--off)"><td style="padding:9px 14px;border-bottom:1px solid var(--bd);font-weight:600">B</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">80–89</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">3.0</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">Bueno</td></tr>
+          <tr><td style="padding:9px 14px;border-bottom:1px solid var(--bd);font-weight:600">C</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">70–79</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">2.0</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">Satisfactorio</td></tr>
+          <tr style="background:var(--off)"><td style="padding:9px 14px;border-bottom:1px solid var(--bd);font-weight:600">D</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">60–69</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">1.0</td><td style="padding:9px 14px;border-bottom:1px solid var(--bd);color:var(--tm)">Aprobado mínimo</td></tr>
+          <tr><td style="padding:9px 14px;font-weight:600;color:var(--red)">F</td><td style="padding:9px 14px;color:var(--tm)">0–59</td><td style="padding:9px 14px;color:var(--tm)">0.0</td><td style="padding:9px 14px;color:var(--tm)">Reprobado</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div></section>
+
+<!-- CERTIFICATES & MICROCREDENTIALS -->
+<section class="sec" style="background:var(--off)">
+<div class="wrap">
+  <div class="lbl">Certificaciones y credenciales</div>
+  <h2 class="ttl">Certificates &amp; <em>Microcredentials</em></h2>
+  <p class="sub" style="margin-bottom:8px">Al estudiar en FBTU obtienes más que un título universitario. Cada programa incluye certificaciones de industria reconocidas globalmente — credenciales que los reclutadores buscan activamente en LinkedIn y en procesos de selección internacionales.</p>
+  <div style="background:var(--navy);border-left:4px solid var(--red);padding:16px 20px;border-radius:0 var(--r) var(--r) 0;margin-bottom:32px;font-size:14px;color:rgba(255,255,255,.78)">
+    <strong style="color:#fff">Incluidas sin costo adicional</strong> — Las microcredenciales y certificaciones de industria están integradas en el plan de estudios. No son opcionales ni tienen costo extra.
+  </div>
+  <div class="micro-grid">
+
+    <div class="micro-card">
+      <div class="micro-badge">🏆 Certificación incluida</div>
+      <div class="micro-name">Google Career Certificates</div>
+      <div class="micro-desc">Marketing digital, análisis de datos y gestión de proyectos avalados directamente por Google. Aparecen en tu perfil como certificaciones verificadas por la empresa más reconocida del mundo digital.</div>
+      <div class="micro-provider"><div class="micro-dot" style="background:#4285F4">G</div> Avalado por Google · Reconocido en +150 países</div>
+    </div>
+
+    <div class="micro-card">
+      <div class="micro-badge">🏆 Certificación incluida</div>
+      <div class="micro-name">LinkedIn Learning Certificate</div>
+      <div class="micro-desc">Certificados que aparecen directamente en tu perfil de LinkedIn, visibles para los reclutadores en el momento exacto en que buscan candidatos. La credencial que ve el mercado laboral.</div>
+      <div class="micro-provider"><div class="micro-dot" style="background:#0A66C2">in</div> Integrado con tu perfil LinkedIn</div>
+    </div>
+
+    <div class="micro-card">
+      <div class="micro-badge">🏆 Certificación incluida</div>
+      <div class="micro-name">Meta Blueprint</div>
+      <div class="micro-desc">Certificación oficial de Meta para Facebook e Instagram Ads. La credencial de referencia para profesionales de publicidad digital en Latinoamérica. Exigida por agencias y anunciantes.</div>
+      <div class="micro-provider"><div class="micro-dot" style="background:#0866FF">M</div> Certificación oficial Meta · Programas de Marketing</div>
+    </div>
+
+    <div class="micro-card">
+      <div class="micro-badge">🏆 Certificación incluida</div>
+      <div class="micro-name">Microsoft Power BI</div>
+      <div class="micro-desc">Domina el análisis e inteligencia de negocios con la herramienta líder del mercado corporativo global. Certificación oficial de Microsoft incluida en programas de Business y Finance.</div>
+      <div class="micro-provider"><div class="micro-dot" style="background:#00A4EF">MS</div> Certificación oficial Microsoft</div>
+    </div>
+
+    <div class="micro-card">
+      <div class="micro-badge">📜 Microcredencial académica</div>
+      <div class="micro-name">Business Analytics Fundamentals</div>
+      <div class="micro-desc">Dominio de herramientas de análisis de datos aplicados a decisiones empresariales. Incluye Excel avanzado, dashboards y bases de interpretación estadística.</div>
+      <div class="micro-provider"><div class="micro-dot" style="background:var(--navy)">F</div> FBTU Certificate · Programas Business y Finance</div>
+    </div>
+
+    <div class="micro-card">
+      <div class="micro-badge">📜 Microcredencial académica</div>
+      <div class="micro-name">Digital Marketing Specialist</div>
+      <div class="micro-desc">Planificación e implementación de estrategias de marketing digital: SEO, SEM, email marketing, redes sociales y medición de resultados. Orientado a mercados de habla hispana.</div>
+      <div class="micro-provider"><div class="micro-dot" style="background:var(--navy)">F</div> FBTU Certificate · Programas Marketing</div>
+    </div>
+
+    <div class="micro-card">
+      <div class="micro-badge">📜 Microcredencial académica</div>
+      <div class="micro-name">Strategic Leadership &amp; Management</div>
+      <div class="micro-desc">Competencias de liderazgo ejecutivo, gestión de equipos y toma de decisiones estratégicas. Diseñado para profesionales que aspiran a roles directivos.</div>
+      <div class="micro-provider"><div class="micro-dot" style="background:var(--navy)">F</div> FBTU Certificate · Todos los programas MBA</div>
+    </div>
+
+    <div class="micro-card">
+      <div class="micro-badge">📜 Microcredencial académica</div>
+      <div class="micro-name">E-Learning Design &amp; Technologies</div>
+      <div class="micro-desc">Diseño instruccional para entornos virtuales, herramientas de e-learning y gestión de plataformas LMS. Específico para el Master of Higher Education.</div>
+      <div class="micro-provider"><div class="micro-dot" style="background:var(--navy)">F</div> FBTU Certificate · Master Higher Education</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:40px;background:var(--navy);border-radius:var(--r);padding:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
+    <div>
+      <div style="font-family:var(--H);font-size:18px;font-weight:800;text-transform:uppercase;color:#fff;margin-bottom:8px">¿Qué certificación va con tu programa?</div>
+      <div style="font-size:14px;color:rgba(255,255,255,.6)">Cada programa tiene un mapa de certificaciones específico. Consulta el catálogo para ver cuáles corresponden a tu carrera.</div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn md b-red" onclick="go('reqinfo')">Solicitar información →</button>
+      <button class="btn md" style="background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)" onclick="go('sobre','catalogo')">Ver catálogo oficial</button>
+    </div>
+  </div>
+
+</div>
+</section>
+<div class="ctaf"><div><h2 class="cf-h">Certificaciones reales.<br>Carrera real.</h2><p class="cf-s">Incluidas en tu programa · Sin costo adicional · Reconocidas globalmente.</p></div><button class="btn lg b-wht" onclick="go('adm')">Solicitar admisión →</button></div>
+</div><!-- /pg-academics -->
+
+<!-- ════════════════════════════════
+     PAGE: FBTU JOBS
+════════════════════════════════ -->
+<div id="pg-jobs" class="pg">
+<div class="phero" style="background:linear-gradient(135deg,#08102e 0%,#1a2470 60%,#0f1d5a 100%)"><div class="wrap">
+  <div class="ph-ey">Empleabilidad</div>
+  <h1>FBTU <em>Jobs</em></h1>
+  <p>Tu carrera profesional empieza antes de graduarte. Conectamos el talento FBTU con el mercado real — sin promesas vacías, con herramientas concretas.</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+
+  <div class="jobs-hero-box">
+    <div style="position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+      <div>
+        <div style="font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:12px">Nuestra promesa de empleabilidad</div>
+        <h2 style="font-family:var(--H);font-size:clamp(28px,3.5vw,44px);font-weight:900;color:#fff;line-height:1;margin-bottom:16px">Your degree.<br><span style="color:var(--red)">Their market.</span></h2>
+        <p style="font-size:15px;color:rgba(255,255,255,.65);line-height:1.75;margin-bottom:24px">FBTU Career Services te acompaña desde el inicio del programa con herramientas, recursos y conexiones reales para que el mercado laboral te encuentre preparado. <em style="color:rgba(255,255,255,.45)">Sin garantía de empleo — pero con todo para lograrlo.</em></p>
+        <button class="btn md b-red" onclick="go('reqinfo')">Hablar con un asesor de carrera →</button>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:38px;font-weight:900;color:#fff;line-height:1">+120</div><div style="font-size:11px;color:rgba(255,255,255,.45);margin-top:5px">países donde tu título vale</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:38px;font-weight:900;color:var(--red);line-height:1">4</div><div style="font-size:11px;color:rgba(255,255,255,.45);margin-top:5px">certificaciones de industria incluidas</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:38px;font-weight:900;color:#fff;line-height:1">6%</div><div style="font-size:11px;color:rgba(255,255,255,.45);margin-top:5px">crecimiento gestión empresarial EE.UU. 2034</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:38px;font-weight:900;color:var(--red);line-height:1">+1M</div><div style="font-size:11px;color:rgba(255,255,255,.45);margin-top:5px">vacantes anuales dirección EE.UU.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Career Services -->
+  <div class="lbl">Servicios de carrera</div>
+  <h2 class="ttl">Qué incluye <em>FBTU Career Center</em></h2>
+  <div class="jobs-grid">
+    <div class="job-card"><div class="job-icon">🔍</div><div class="job-ttl">Bolsa de trabajo internacional</div><div class="job-desc">Acceso a oportunidades laborales en Latinoamérica y EE.UU. Alianzas con empresas y organizaciones globales. Actualizaciones periódicas con nuevas vacantes.</div></div>
+    <div class="job-card"><div class="job-icon">📄</div><div class="job-ttl">Preparación de documentos laborales</div><div class="job-desc">Construcción y optimización de CV profesional, carta de presentación y perfil LinkedIn orientado al mercado corporativo internacional. Revisión personalizada.</div></div>
+    <div class="job-card"><div class="job-icon">🤖</div><div class="job-ttl">IA aplicada a tu perfil</div><div class="job-desc">Tecnología de inteligencia artificial para optimizar tu CV, destacar logros y aumentar tu visibilidad ante reclutadores que usan sistemas ATS (Applicant Tracking Systems).</div></div>
+    <div class="job-card"><div class="job-icon">🎯</div><div class="job-ttl">Tests de liderazgo y aptitud</div><div class="job-desc">Evaluaciones de liderazgo, marketing y gestión para identificar tus fortalezas y áreas de desarrollo. Resultados que puedes compartir con empleadores potenciales.</div></div>
+    <div class="job-card"><div class="job-icon">🌐</div><div class="job-ttl">Networking global</div><div class="job-desc">Conexión con la comunidad académica y empresarial FBTU en toda Latinoamérica. Eventos virtuales, foros de industria y grupos de profesionales por sector.</div></div>
+    <div class="job-card"><div class="job-icon">🏢</div><div class="job-ttl">Alianzas con empleadores</div><div class="job-desc">Vínculos con empresas y organizaciones interesadas en contratar talento FBTU. Los egresados acceden a procesos de selección con empresas partner antes de publicarse en el mercado.</div></div>
+    <div class="job-card"><div class="job-icon">💡</div><div class="job-ttl">Orientación de carrera</div><div class="job-desc">Sesiones de asesoramiento con especialistas en desarrollo profesional. Definición de objetivos, estrategia de carrera y plan de acción personalizado.</div></div>
+    <div class="job-card"><div class="job-icon">📊</div><div class="job-ttl">Workshops de empleabilidad</div><div class="job-desc">Talleres prácticos sobre cómo entrevistar, negociar salarios, presentar tu propuesta de valor y destacar en el mercado laboral latinoamericano y americano.</div></div>
+  </div>
+
+  <!-- Career Outcomes por programa -->
+  <div style="margin-top:52px">
+    <div class="lbl">Salidas laborales</div>
+    <h2 class="ttl">¿A qué roles te lleva <em>cada programa?</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-top:28px">
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden">
+        <div style="background:var(--navy);padding:16px 20px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:#fff">Business Administration</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:3px">Pregrado — 120 créditos</div></div>
+        <div style="padding:18px 20px"><div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--t)">
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Gerente General / CEO</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Consultor Estratégico</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Director de Operaciones</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Emprendedor / Fundador</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Business Development Manager</div>
+        </div></div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden">
+        <div style="background:var(--navy);padding:16px 20px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:#fff">Marketing</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:3px">Pregrado — 120 créditos</div></div>
+        <div style="padding:18px 20px"><div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--t)">
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Director de Marketing</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Digital Marketing Manager</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Brand Manager</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>E-Commerce Manager</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Growth Hacker</div>
+        </div></div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden">
+        <div style="background:var(--navy);padding:16px 20px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:#fff">Information Technology</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:3px">Pregrado — 120 créditos</div></div>
+        <div style="padding:18px 20px"><div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--t)">
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>IT Manager / CTO</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Software Developer</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Systems Analyst</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Project Manager TI</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Technology Consultant</div>
+        </div></div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden">
+        <div style="background:var(--navy);padding:16px 20px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:#fff">Accounting &amp; Finance</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:3px">Pregrado — 120 créditos</div></div>
+        <div style="padding:18px 20px"><div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--t)">
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>CFO / Director Financiero</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Financial Analyst</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Controller / Contador</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Investment Analyst</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Risk Manager</div>
+        </div></div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden">
+        <div style="background:var(--red);padding:16px 20px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:#fff">MBA</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:3px">Posgrado — 36 créditos</div></div>
+        <div style="padding:18px 20px"><div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--t)">
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>CEO / President</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>VP de Operaciones</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Director de Estrategia</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Managing Director</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Board Member / Consultor Senior</div>
+        </div></div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden">
+        <div style="background:var(--red);padding:16px 20px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:#fff">Master of Marketing</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:3px">Posgrado — 36 créditos</div></div>
+        <div style="padding:18px 20px"><div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--t)">
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>CMO / Director de Marketing</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Head of Digital</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Marketing Strategist</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Global Brand Manager</div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- For Employers -->
+  <div style="margin-top:52px;background:var(--navy);border-radius:var(--r);padding:44px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+      <div>
+        <div style="font-family:var(--H);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:12px">Para empleadores</div>
+        <h3 style="font-family:var(--H);font-size:26px;font-weight:900;color:#fff;line-height:1.05;margin-bottom:14px">¿Buscas talento FBTU<br>para tu empresa?</h3>
+        <p style="font-size:15px;color:rgba(255,255,255,.62);line-height:1.7;margin-bottom:22px">Los egresados de FBTU están formados con estándares americanos, hablan español, entienden el mercado latinoamericano y llegan con certificaciones de Google, LinkedIn, Meta y Microsoft. Son el perfil que el mercado necesita.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn md b-red" onclick="go('contacto')">Contactar al equipo FBTU</button>
+          <button class="btn md" style="background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)" onclick="go('reqinfo')">Publicar vacante</button>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:16px 20px;font-size:14px;color:rgba(255,255,255,.78)"><strong style="color:#fff;display:block;margin-bottom:3px">✓ Talento bilingüe (español)</strong>Profesionales formados para el mercado hispano con visión global.</div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:16px 20px;font-size:14px;color:rgba(255,255,255,.78)"><strong style="color:#fff;display:block;margin-bottom:3px">✓ Certificaciones verificables</strong>Google, LinkedIn, Meta y Microsoft incluidos en la formación.</div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:16px 20px;font-size:14px;color:rgba(255,255,255,.78)"><strong style="color:#fff;display:block;margin-bottom:3px">✓ Perfil orientado a la ejecución</strong>Formados en casos reales y proyectos aplicados desde el primer día.</div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:16px 20px;font-size:14px;color:rgba(255,255,255,.78)"><strong style="color:#fff;display:block;margin-bottom:3px">✓ Título americano apostillable</strong>Profesionales con un respaldo institucional reconocido en +120 países.</div>
+      </div>
+    </div>
+  </div>
+
+</div></section>
+<div class="ctaf"><div><h2 class="cf-h">Tu carrera empieza<br>antes de graduarte.</h2><p class="cf-s">Career Services · Bolsa de trabajo · Certificaciones · Sin garantía de empleo, con todo para lograrlo.</p></div><button class="btn lg b-wht" onclick="go('reqinfo')">Hablar con un asesor →</button></div>
+</div><!-- /pg-jobs -->
+
+<!-- ════════════════════════════════
+     PAGE: INTERNATIONAL APPLICANTS + APPLY NOW
+════════════════════════════════ -->
+<div id="pg-apply" class="pg">
+<div class="phero" style="background:linear-gradient(135deg,#0d1442 0%,var(--navy) 100%)"><div class="wrap">
+  <div class="ph-ey">Admisiones</div>
+  <h1>Apply Now — <em>Solicitar admisión</em></h1>
+  <p>El proceso es 100% online, sin TOEFL ni GRE, y responde en 10 días hábiles. Estamos listos para recibir tu solicitud desde cualquier país de Latinoamérica.</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+
+  <!-- APPLY NOW — pasos visuales grandes -->
+  <div class="lbl">Proceso</div>
+  <h2 class="ttl"><em>Apply Now</em> — Comienza hoy</h2>
+  <p class="sub" style="margin-bottom:32px">Cinco pasos simples, totalmente online. Desde donde estás, en tu idioma, en tu tiempo.</p>
+
+  <div class="apply-steps">
+    <div class="apply-step">
+      <div class="apply-snum">1</div>
+      <div class="apply-ttl">Completa el formulario</div>
+      <div class="apply-desc">Rellena el formulario de admisión online con tus datos personales y el programa que te interesa. Solo toma unos minutos.</div>
+    </div>
+    <div class="apply-step">
+      <div class="apply-snum">2</div>
+      <div class="apply-ttl">Envía tus documentos</div>
+      <div class="apply-desc">Sube tus documentos al Admissions Office: ID oficial + diploma de bachillerato (pregrado) o título universitario (posgrado) + transcriptos.</div>
+    </div>
+    <div class="apply-step">
+      <div class="apply-snum r">3</div>
+      <div class="apply-ttl">Evaluación en 10 días</div>
+      <div class="apply-desc">El equipo de admisiones revisa tu expediente y te envía la respuesta oficial en un máximo de 10 días hábiles.</div>
+    </div>
+    <div class="apply-step">
+      <div class="apply-snum r">4</div>
+      <div class="apply-ttl">Confirma con el pago</div>
+      <div class="apply-desc">Si eres aceptado, confirmas tu lugar con el pago del Registration Fee de $100. 100% online desde cualquier país.</div>
+    </div>
+    <div class="apply-step">
+      <div class="apply-snum g">5</div>
+      <div class="apply-ttl">¡Empieza en Canvas!</div>
+      <div class="apply-desc">Accedes a Canvas LMS, completas la orientación obligatoria y comienzas a construir tu futuro profesional.</div>
+    </div>
+  </div>
+
+  <!-- Formulario de solicitud grande -->
+  <div style="margin-top:52px;background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:44px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start">
+      <div>
+        <h3 style="font-family:var(--H);font-size:22px;font-weight:900;text-transform:uppercase;color:var(--navy);margin-bottom:7px">Formulario de admisión</h3>
+        <p style="font-size:14px;color:var(--tm);margin-bottom:24px;line-height:1.6">Completa todos los campos. El equipo de admisiones se pondrá en contacto contigo dentro de los próximos 2 días hábiles para confirmar la recepción y orientarte.</p>
+        <div class="fr"><div class="fg"><label class="cfl">Nombre</label><input type="text" class="cfi" placeholder="Tu nombre"></div><div class="fg"><label class="cfl">Apellidos</label><input type="text" class="cfi" placeholder="Tus apellidos"></div></div>
+        <div class="fr"><div class="fg"><label class="cfl">Email</label><input type="email" class="cfi" placeholder="tu@email.com"></div><div class="fg"><label class="cfl">WhatsApp / Teléfono</label><input type="tel" class="cfi" placeholder="+591..."></div></div>
+        <div class="fr"><div class="fg"><label class="cfl">País de residencia</label><input type="text" class="cfi" placeholder="Bolivia, Colombia..."></div><div class="fg"><label class="cfl">Ciudad</label><input type="text" class="cfi" placeholder="Tu ciudad"></div></div>
+        <div class="fg"><label class="cfl">Nivel de programa</label>
+          <select class="cfi" style="appearance:none">
+            <option value="">Selecciona nivel...</option>
+            <option>Pregrado — Bachelor of Science (120 créditos)</option>
+            <option>Posgrado / MBA — Master (36 créditos)</option>
+          </select>
+        </div>
+        <div class="fg"><label class="cfl">Programa de interés</label>
+          <select class="cfi" style="appearance:none">
+            <option value="">Selecciona programa...</option>
+            <optgroup label="Pregrado">
+              <option>B.S. Business Administration</option>
+              <option>B.S. Marketing</option>
+              <option>B.S. Information Technology</option>
+              <option>B.S. Accounting &amp; Finance</option>
+            </optgroup>
+            <optgroup label="Posgrado">
+              <option>MBA — Master of Business Administration</option>
+              <option>Master of Marketing</option>
+              <option>Master of Higher Education</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="fg"><label class="cfl">¿Tienes alguna pregunta o comentario?</label><textarea class="cfi cfta" style="min-height:90px" placeholder="Opcional..."></textarea></div>
+        <button class="btn lg b-red" style="width:100%;justify-content:center" onclick="alert('Formulario de solicitud de admisión — Integración CRM / HubSpot pendiente')">Enviar solicitud de admisión →</button>
+        <p style="font-size:12px;color:var(--tm);margin-top:10px;line-height:1.6">Al enviar aceptas nuestra <a onclick="go('legal')" style="color:var(--navy);text-decoration:underline">política de privacidad</a>. FBTU no vende datos personales.</p>
+      </div>
+      <div>
+        <h3 style="font-family:var(--H);font-size:18px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:16px">Documentos requeridos</h3>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:28px">
+          <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 18px">
+            <div style="font-family:var(--H);font-size:12px;font-weight:700;text-transform:uppercase;color:var(--navy);margin-bottom:5px">📋 Todos los aspirantes</div>
+            <div style="font-size:13px;color:var(--tm);line-height:1.6">Documento de identidad oficial vigente (DNI, pasaporte o cédula)</div>
+          </div>
+          <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 18px">
+            <div style="font-family:var(--H);font-size:12px;font-weight:700;text-transform:uppercase;color:var(--blue2,var(--navy));margin-bottom:5px">🎓 Pregrado</div>
+            <div style="font-size:13px;color:var(--tm);line-height:1.6">Diploma de Bachillerato o equivalente + Transcriptos oficiales del nivel secundario</div>
+          </div>
+          <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:14px 18px">
+            <div style="font-family:var(--H);font-size:12px;font-weight:700;text-transform:uppercase;color:var(--red);margin-bottom:5px">📚 Posgrado / MBA</div>
+            <div style="font-size:13px;color:var(--tm);line-height:1.6">Título universitario de Bachelor o equivalente + Transcriptos universitarios oficiales</div>
+          </div>
+        </div>
+        <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:18px">
+          <div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:8px">Sin barreras de ingreso</div>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--tm)">
+            <div style="display:flex;gap:8px"><span style="color:var(--red);font-weight:700">✗</span>No se requiere TOEFL</div>
+            <div style="display:flex;gap:8px"><span style="color:var(--red);font-weight:700">✗</span>No se requiere GRE ni GMAT</div>
+            <div style="display:flex;gap:8px"><span style="color:var(--red);font-weight:700">✗</span>No hay examen de ingreso</div>
+            <div style="display:flex;gap:8px"><span style="color:var(--red);font-weight:700">✗</span>No se requiere dominio de inglés</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERNATIONAL APPLICANTS -->
+  <div style="margin-top:60px" id="intl">
+    <div class="lbl">Aplicantes internacionales</div>
+    <h2 class="ttl">International <em>Applicants</em></h2>
+    <p class="sub" style="margin-bottom:28px">FBTU está diseñado para estudiantes de toda Latinoamérica. Sin importar tu país de residencia, el proceso de admisión es exactamente el mismo — 100% online, en español, sin requisitos adicionales por ser extranjero.</p>
+
+    <div style="background:var(--navy);border-radius:var(--r);padding:32px;margin-bottom:32px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px">
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇧🇴<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Bolivia</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇵🇪<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Perú</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇨🇴<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Colombia</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇦🇷<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Argentina</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇲🇽<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">México</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇨🇱<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Chile</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇪🇨<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Ecuador</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇵🇾<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Paraguay</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇺🇾<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Uruguay</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇸🇻<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">El Salvador</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🇭🇳<div style="font-family:var(--H);font-size:12px;font-weight:700;color:#fff;margin-top:6px;text-transform:uppercase">Honduras</div></div>
+        <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:14px;text-align:center;font-size:22px">🌎<div style="font-family:var(--H);font-size:12px;font-weight:700;color:rgba(255,255,255,.6);margin-top:6px;text-transform:uppercase">+120 países</div></div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:28px">
+        <div style="font-family:var(--H);font-size:16px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:14px">✅ Proceso idéntico para todos los países</div>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--tm)">
+          <div style="display:flex;gap:9px"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>No se requiere visa ni permiso de estudios (modalidad 100% online)</div>
+          <div style="display:flex;gap:9px"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>Documentos pueden enviarse digitalmente en español</div>
+          <div style="display:flex;gap:9px"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>Pago del Registration Fee ($100) desde cualquier país</div>
+          <div style="display:flex;gap:9px"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>Título emitido en Florida, apostillable en tu país de residencia</div>
+          <div style="display:flex;gap:9px"><span style="color:var(--red);font-weight:700;flex-shrink:0">→</span>Canvas LMS accesible desde cualquier dispositivo con internet</div>
+        </div>
+      </div>
+      <div style="background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:28px">
+        <div style="font-family:var(--H);font-size:16px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:14px">📜 Equivalencia de documentos por país</div>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--tm)">
+          <div><strong style="color:var(--t)">Bolivia:</strong> Bachillerato + libreta de calificaciones</div>
+          <div><strong style="color:var(--t)">Perú:</strong> Certificado de educación secundaria + acta de nacimiento</div>
+          <div><strong style="color:var(--t)">Colombia:</strong> Diploma bachiller + acta de grado</div>
+          <div><strong style="color:var(--t)">Argentina:</strong> Título secundario completo + analítico</div>
+          <div><strong style="color:var(--t)">México:</strong> Certificado de bachillerato + CURP</div>
+          <div><strong style="color:var(--t)">Otros países:</strong> Documento equivalente de finalización de secundaria. Consultar con Admisiones para validación.</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:20px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px">
+      <div style="font-size:14px;color:var(--t)"><strong>¿Tu documento no está en la lista?</strong> Contáctanos — el equipo de admisiones evalúa equivalencias de forma individual y sin costo.</div>
+      <button class="btn md b-navy" onclick="go('contacto')">Consultar con admisiones →</button>
+    </div>
+  </div>
+
+</div></section>
+<div class="ctaf"><div><h2 class="cf-h">¿Listo para aplicar?</h2><p class="cf-s">El proceso toma minutos. La respuesta llega en 10 días hábiles.</p></div><button class="btn lg b-wht" onclick="document.getElementById('pg-apply').querySelector('.cfi').focus();window.scrollTo({top:300,behavior:'smooth'})">Completar formulario →</button></div>
+</div><!-- /pg-apply -->
+
+<!-- ════════════════════════════════
+     PAGE: REQUEST INFORMATION
+════════════════════════════════ -->
+<div id="pg-reqinfo" class="pg">
+<div class="phero" style="background:linear-gradient(160deg,var(--red2) 0%,var(--red) 50%,#d44b52 100%)"><div class="wrap">
+  <div class="ph-ey">Información</div>
+  <h1>Request <em>Information</em></h1>
+  <p>Completa el formulario y un asesor académico de FBTU te contactará dentro de las próximas 24 horas con información personalizada sobre el programa que te interesa.</p>
+</div></div>
+
+<section class="sec"><div class="wrap">
+  <div class="req-form">
+    <div class="rf-ttl">Solicitar información</div>
+    <p class="rf-sub">Sin compromiso. Sin presión. Solo información honesta y personalizada sobre tu programa ideal en FBTU.</p>
+
+    <div class="rf-row"><div class="fg"><label class="rf-label">Nombre</label><input type="text" class="rf-input" placeholder="Tu nombre"></div><div class="fg"><label class="rf-label">Apellidos</label><input type="text" class="rf-input" placeholder="Tus apellidos"></div></div>
+    <div class="fg"><label class="rf-label">Correo electrónico</label><input type="email" class="rf-input" placeholder="tu@email.com"></div>
+    <div class="rf-row"><div class="fg"><label class="rf-label">WhatsApp / Teléfono</label><input type="tel" class="rf-input" placeholder="+591..."></div><div class="fg"><label class="rf-label">País</label><input type="text" class="rf-input" placeholder="Tu país de residencia"></div></div>
+    <div class="fg"><label class="rf-label">¿Qué nivel te interesa?</label>
+      <select class="rf-input" style="appearance:none;color:rgba(255,255,255,.7)">
+        <option style="color:var(--t)" value="">Selecciona nivel...</option>
+        <option style="color:var(--t)">Pregrado — Bachelor (120 créditos · ~$3,600)</option>
+        <option style="color:var(--t)">Posgrado / MBA — Master (36 créditos · ~$1,800)</option>
+        <option style="color:var(--t)">Aún no lo tengo claro</option>
+      </select>
+    </div>
+    <div class="fg"><label class="rf-label">Programa específico de interés</label>
+      <select class="rf-input" style="appearance:none;color:rgba(255,255,255,.7)">
+        <option style="color:var(--t)" value="">Selecciona programa (opcional)...</option>
+        <optgroup label="Pregrado"><option style="color:var(--t)">B.S. Business Administration</option><option style="color:var(--t)">B.S. Marketing</option><option style="color:var(--t)">B.S. Information Technology</option><option style="color:var(--t)">B.S. Accounting &amp; Finance</option></optgroup>
+        <optgroup label="Posgrado"><option style="color:var(--t)">MBA</option><option style="color:var(--t)">Master of Marketing</option><option style="color:var(--t)">Master of Higher Education</option></optgroup>
+      </select>
+    </div>
+    <div class="fg"><label class="rf-label">¿Qué información necesitas?</label>
+      <textarea class="rf-input" style="min-height:100px;resize:vertical" placeholder="Ej: información sobre becas, fechas de inicio, equivalencia de mi título, plan de pagos..."></textarea>
+    </div>
+    <button class="btn lg b-red" style="width:100%;justify-content:center;background:#fff;color:var(--red)" onclick="alert('Formulario enviado — Integración CRM / HubSpot pendiente')">Enviar solicitud de información →</button>
+    <p style="font-size:12px;color:rgba(255,255,255,.38);margin-top:12px;text-align:center;line-height:1.6">Al enviar aceptas nuestra <span onclick="go('legal')" style="text-decoration:underline;cursor:pointer">política de privacidad</span>. Respuesta en máximo 24 horas hábiles.</p>
+  </div>
+
+  <!-- Contact alternatives -->
+  <div style="max-width:680px;margin:40px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:20px;text-align:center">
+      <div style="font-size:24px;margin-bottom:8px">💬</div>
+      <div style="font-family:var(--H);font-size:13px;font-weight:700;text-transform:uppercase;color:var(--navy);margin-bottom:5px">WhatsApp</div>
+      <div style="font-size:13px;color:var(--tm)">Escríbenos al +1-954-558-2655</div>
+    </div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:20px;text-align:center">
+      <div style="font-size:24px;margin-bottom:8px">📞</div>
+      <div style="font-family:var(--H);font-size:13px;font-weight:700;text-transform:uppercase;color:var(--navy);margin-bottom:5px">Teléfono</div>
+      <div style="font-size:13px;color:var(--tm)">+1-954-558-2655<br>Lunes a viernes EST</div>
+    </div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:20px;text-align:center">
+      <div style="font-size:24px;margin-bottom:8px">📅</div>
+      <div style="font-family:var(--H);font-size:13px;font-weight:700;text-transform:uppercase;color:var(--navy);margin-bottom:5px">Agendar sesión</div>
+      <div style="font-size:13px;color:var(--tm)">Orientación personalizada con admisiones</div>
+    </div>
+  </div>
+
+</div></section>
+</div><!-- /pg-reqinfo -->
+
+<!-- ════════════════════════════════
+     FOOTER — TODAS LAS PÁGINAS
+════════════════════════════════ -->
+<footer>
+  <div class="ft wrap">
+    <div>
+      <div class="fsr">
+        <div class="fse">FBTU</div>
+        <div class="fbn">Florida Business &amp; Technology<br><span>University</span></div>
+      </div>
+      <p class="ftg">Built to last. Designed to transform.<br>Educación universitaria americana en español para Latinoamérica.</p>
+      <div class="fct">
+        <span>📍 9100 S. Dadeland Blvd, Suite 1531</span>
+        <span>Miami, FL 33156, EE.UU.</span>
+        <span>📞 <strong>+1-954-558-2655</strong></span>
+      </div>
+    </div>
+    <div>
+      <div class="fct2">Programas</div>
+      <div class="fls">
+        <a onclick="go('pre','bba')">B.S. Business Administration</a>
+        <a onclick="go('pre','mkt')">B.S. Marketing</a>
+        <a onclick="go('pre','it')">B.S. Information Technology</a>
+        <a onclick="go('pre','acct')">B.S. Accounting &amp; Finance</a>
+        <a onclick="go('pos','mba')">MBA</a>
+        <a onclick="go('pos','mktm')">Master of Marketing</a>
+        <a onclick="go('pos','edm')">Master of Higher Education</a>
+      </div>
+    </div>
+    <div>
+      <div class="fct2">FBTU</div>
+      <div class="fls">
+        <a onclick="go('sobre')">Sobre FBTU</a>
+        <a onclick="go('sobre','mision')">Misión y Visión</a>
+        <a onclick="go('adm')">Admisiones</a>
+        <a onclick="go('adm','aranceles')">Aranceles &amp; Becas</a>
+        <a onclick="go('vida')">Canvas LMS</a>
+        <a onclick="go('sobre','catalogo')">Catálogo Oficial</a>
+        <a onclick="go('contacto')">Contacto</a>
+        <a onclick="go('jobs')">FBTU Jobs</a>
+        <a onclick="go('academics')">Modelo Académico</a>
+        <a onclick="go('reqinfo')" style="color:rgba(200,35,44,.65)">Request Information</a>
+      </div>
+    </div>
+    <div>
+      <div class="fct2">Legal</div>
+      <div class="fls">
+        <a onclick="go('sobre','licenc')" style="color:rgba(200,35,44,.65)">⚖ Licensing &amp; Info Institucional</a>
+        <a onclick="go('legal')">Política de privacidad</a>
+        <a onclick="go('legal')">Términos y condiciones</a>
+        <a onclick="go('legal')">Non-Discrimination Policy</a>
+        <a onclick="go('legal')">Consumer Information</a>
+        <a onclick="go('legal')">FERPA</a>
+        <a onclick="go('legal')">Grievance Policy</a>
+        <a onclick="go('adm','reimb')">Política de reembolsos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fdiv"></div>
+
+  <div class="fleg">
+    <strong>Aviso legal obligatorio — Commission for Independent Education, Florida:</strong>
+    © 2026 Florida Business and Technology University, Inc. Florida Business &amp; Technology University está en proceso de licenciamiento ante la Commission for Independent Education, Florida Department of Education, 325 West Gaines Street, Suite 1414, Tallahassee, FL 32399-0400, teléfono 888-224-6684.
+    <strong>Actualmente NO está acreditada.</strong> Todos los cursos se dictan únicamente en español. Completar un programa en un idioma distinto al inglés puede reducir la empleabilidad donde se requiere inglés. La aceptación de créditos de transferencia queda a discreción de la institución receptora. FBTU no garantiza empleo al graduarse.
+  </div>
+
+  <div class="fbot">
+    <div class="fcp">© 2026 Florida Business and Technology University, Inc. Todos los derechos reservados.</div>
+    <div class="fsoc">
+      <div class="sb" title="LinkedIn">in</div>
+      <div class="sb" title="Instagram">ig</div>
+      <div class="sb" title="Facebook">fb</div>
+      <div class="sb" title="YouTube">yt</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<div class="wab" title="Contactar por WhatsApp" onclick="alert('WhatsApp Business — integración pendiente')">💬</div>
+
+<!-- ════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════ -->
+<script>
+// ── NAV SCROLL ──────────────────────────────────
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('sc',window.scrollY>60);
+});
+
+// ── PAGE NAVIGATION ─────────────────────────────
+function go(id, anchor){
+  document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));
+  const pg = document.getElementById('pg-'+id);
+  if(!pg) return;
+  pg.classList.add('on');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(anchor){
+    setTimeout(()=>{
+      const el = document.getElementById(anchor);
+      if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+    },250);
+  }
+  // re-observe fade elements in new page
+  pg.querySelectorAll('.fd').forEach(el=>{
+    el.classList.remove('in');
+    obs.observe(el);
+  });
+}
+
+// ── COUNTERS ────────────────────────────────────
+function cnt(el,target,dur){
+  let s=0,step=target/(dur/16);
+  const t=setInterval(()=>{
+    s=Math.min(s+step,target);
+    el.textContent=Math.round(s);
+    if(s>=target) clearInterval(t);
+  },16);
+}
+setTimeout(()=>{
+  cnt(document.getElementById('c1'),120,1200);
+  cnt(document.getElementById('c2'),30,800);
+  cnt(document.getElementById('c3'),12,900);
+  cnt(document.getElementById('c4'),8,700);
+},500);
+
+// ── SCROLL REVEAL ───────────────────────────────
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); });
+},{threshold:0.08});
+document.querySelectorAll('.fd').forEach(el=>obs.observe(el));
+
+// ── PROGRAM FILTER ──────────────────────────────
+function fprog(type,btn){
+  document.querySelectorAll('.ptabs .ptab').forEach(t=>t.classList.remove('on'));
+  btn.classList.add('on');
+  document.querySelectorAll('#pgrid .pc').forEach(c=>{
+    if(type==='all'){ c.style.display=''; return; }
+    c.style.display = c.classList.contains(type) ? '' : 'none';
+  });
+}
+
+// ── REQ TABS ────────────────────────────────────
+function swrq(showId,hideId,btn){
+  const tabs = btn.closest('.rqtabs').querySelectorAll('.rqtab');
+  tabs.forEach(t=>t.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById(showId).style.display='';
+  document.getElementById(hideId).style.display='none';
+}
+
+// ── ACCORDION ───────────────────────────────────
+function accToggle(head){
+  const body=head.nextElementSibling;
+  const arrow=head.querySelector('.ac-a');
+  const open=body.classList.contains('op');
+  body.classList.toggle('op',!open);
+  arrow.classList.toggle('op',!open);
+}
+
+// ── MOBILE MENU ─────────────────────────────────
+function toggleMob(){
+  document.getElementById('mob').classList.toggle('on');
+}
+</script>
+</body>
+</html>
